@@ -1,0 +1,23 @@
+.App {
+  background-color: #ededed;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container-global {
+  display: flex;
+  flex: 1;
+}
+.product-card-global {
+  border-radius: 8px;
+  border: rgb(241, 239, 239) 1px solid;
+  margin: 20px 20px 0px 30px;
+}
+.product-card-global:hover {
+  background-color: white;
+  border: whitesmoke 2px solid;
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
