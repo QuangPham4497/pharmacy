@@ -26,6 +26,33 @@
       "createdAt": 1684247322029,
       "updatedAt": 1684247322029,
       "id": 3
+    },
+    {
+      "email": "quang2@gmail.com",
+      "password": "$2a$10$WIDQWqDMHj70iG1dPuQyJewWZO9QQtJwim4ocSBxkUrUca0L7wSoy",
+      "fullName": "quang2",
+      "role": "user",
+      "createdAt": 1684464330411,
+      "updatedAt": 1684464330411,
+      "id": 4
+    },
+    {
+      "email": "quang3@gmail.com",
+      "password": "$2a$10$akHjLJWyb6gL9sREuOpC5Ovd6eOvzbmpuJLd7sb0qqIbHLsyDcQkG",
+      "fullName": "quang3",
+      "role": "user",
+      "createdAt": 1684464344165,
+      "updatedAt": 1684464344165,
+      "id": 5
+    },
+    {
+      "email": "quang4@gmail.com",
+      "password": "$2a$10$IliwzGbhQTLmuVK2m82m9.uZQAYcN28wzmpn3U0k7Q.MiMD5bRMLO",
+      "fullName": "quang4",
+      "role": "user",
+      "createdAt": 1684464373522,
+      "updatedAt": 1684464373522,
+      "id": 6
     }
   ],
   "products": [
