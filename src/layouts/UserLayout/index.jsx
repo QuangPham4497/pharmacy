@@ -10,7 +10,9 @@ function UserLayout() {
     <div className="wrapper">
       <UserHeader />
       <S.MainWrapper>
-        <Outlet />
+        <S.MainContainer>
+          <Outlet />
+        </S.MainContainer>
       </S.MainWrapper>
       <UserFooter />
     </div>

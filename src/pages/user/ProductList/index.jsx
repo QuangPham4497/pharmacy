@@ -2,7 +2,7 @@ import { useMemo, useEffect, useState } from "react";
 import { Row, Col, Card, Button, Input, Checkbox, Select, Spin } from "antd";
 import * as S from "./styles";
 import { useSelector, useDispatch } from "react-redux";
-import { Link, generatePath, useNavigate } from "react-router-dom";
+import { Link, generatePath, useNavigate, useLocation } from "react-router-dom";
 import { ROUTES } from "../../../constants/routes";
 import {
   getCategoryListAction,
@@ -13,6 +13,7 @@ import { PRODUCT_LIMIT } from "../../../constants/paging";
 function ProductList() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { state } = useLocation();
   const { productList } = useSelector((state) => state.product);
   const { categoryList } = useSelector((state) => state.category);
   const [filterParams, setFilterParams] = useState({
@@ -21,42 +22,21 @@ function ProductList() {
     sort: "",
   });
 
-  // const [productList, setProductList] = useState([
-  //   {
-  //     name: "3B STADA",
-  //     price: 77220,
-  //   },
-  //   {
-  //     name: "Acetylcystein",
-  //     price: 65000,
-  //   },
-  //   {
-  //     name: "Acetylcystein 200mg Vidipha",
-  //     price: 100000,
-  //   },
-  //   {
-  //     name: "AcetylCysstein Boston 200",
-  //     price: 55000,
-  //   },
-  //   {
-  //     name: "Agilodin 10g",
-  //     price: 350000,
-  //   },
-  //   {
-  //     name: "Agiparofen 525mg",
-  //     price: 50000,
-  //   },
-  // ]);
-
   useEffect(() => {
+    setFilterParams({
+      ...filterParams,
+      searchKey: state?.searchKey || "",
+    });
     dispatch(
       getProductListAction({
+        ...filterParams,
+        searchKey: state?.searchKey || "",
         page: 1,
         limit: PRODUCT_LIMIT,
       })
     );
     dispatch(getCategoryListAction());
-  }, []);
+  }, [state?.searchKey]);
 
   // const handleFilterCategory = (values) => {
   //   setFilterParams({
@@ -180,6 +160,7 @@ function ProductList() {
               <Col span={21}>
                 <Input
                   style={{ borderRadius: 8 }}
+                  value={filterParams.searchKey}
                   onChange={(e) => handleFilter("searchKey", e.target.value)}
                   placeholder="Tim kiem"
                 />

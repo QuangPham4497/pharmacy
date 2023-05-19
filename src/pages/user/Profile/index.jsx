@@ -9,8 +9,10 @@ import { getOrderList } from "redux/actions";
 
 function ProfilePage() {
   const dispatch = useDispatch();
+  const [infomationForm] = Form.useForm();
 
   const { userInfo } = useSelector((state) => state.auth);
+
   const { orderList } = useSelector((state) => state.order);
 
   useEffect(() => {
@@ -18,6 +20,18 @@ function ProfilePage() {
       dispatch(getOrderList({ userId: userInfo.data.id }));
     }
   }, [userInfo.data.id]);
+
+  useEffect(() => {
+    if (userInfo.data.id) {
+      infomationForm.resetFields();
+    }
+  }, [userInfo.data.id]);
+
+  // initial của thông tin cá nhân
+  const initialValues = {
+    fullName: userInfo.data.fullName,
+    email: userInfo.data.email,
+  };
 
   const tableColumns = [
     {
@@ -51,7 +65,7 @@ function ProfilePage() {
       title: "ID sản phẩm",
       dataIndex: "id",
       key: "id",
-      render: (record, orderDetails) => `${orderDetails.productId}`,
+      render: (_, orderDetails) => `${orderDetails.productId}`,
     },
     {
       title: "Loại thuốc",
@@ -76,94 +90,100 @@ function ProfilePage() {
 
   return (
     <S.ProfileWrapper>
-      {/* form Thông tin cá nhân */}
-      <Form
-        name="infomationForm"
-        // form={checkoutForm}
-        layout="vertical"
-        // initialValues={initialValues}
-        onFinish={(values) => {}}
-      >
-        <Card size="medium" title="Thông tin cá nhân">
-          <Row gutter={[16, 16]}>
-            <Col span={24}>
-              <Form.Item
-                label="Full name"
-                name="fullName"
-                rules={[{ required: true, message: "" }]}
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col span={24}>
-              <Form.Item
-                label="Email"
-                name="email"
-                rules={[{ required: true, message: "" }]}
-              >
-                <Input readOnly />
-              </Form.Item>
-            </Col>
-            <Col span={24}>
-              <Form.Item
-                label="Phone Number"
-                name="phoneNumber"
-                rules={[{ required: true, message: "" }]}
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col span={8}>
-              <Form.Item
-                label="City"
-                name="cityCode"
-                rules={[{ required: true, message: "" }]}
-              ></Form.Item>
-            </Col>
-            <Col span={8}>
-              <Form.Item
-                label="District"
-                name="districtCode"
-                rules={[{ required: true, message: "" }]}
-              ></Form.Item>
-            </Col>
-            <Col span={8}>
-              <Form.Item
-                label="Ward"
-                name="wardCode"
-                rules={[{ required: true, message: "" }]}
-              ></Form.Item>
-            </Col>
-            <Col span={24}>
-              <Form.Item
-                label="Address"
-                name="address"
-                rules={[{ required: true, message: "" }]}
-              >
-                <Input />
-              </Form.Item>
-            </Col>
-          </Row>
-        </Card>
-      </Form>
+      <S.ProfileContainer>
+        {/* form Thông tin cá nhân */}
+        <Form
+          name="infomationForm"
+          form={infomationForm}
+          layout="vertical"
+          initialValues={initialValues}
+          onFinish={(values) => {}}
+        >
+          <Card size="medium" title="Thông tin cá nhân">
+            <Row gutter={[16, 16]}>
+              <Col span={24}>
+                <Form.Item
+                  label="Fullname"
+                  name="fullName"
+                  rules={[
+                    {
+                      required: true,
+                      message: "",
+                    },
+                  ]}
+                >
+                  <Input readOnly />
+                </Form.Item>
+              </Col>
+              <Col span={24}>
+                <Form.Item
+                  label="Email"
+                  name="email"
+                  rules={[{ required: true, message: "" }]}
+                >
+                  <Input readOnly />
+                </Form.Item>
+              </Col>
+              <Col span={24}>
+                <Form.Item
+                  label="Phone Number"
+                  name="phoneNumber"
+                  rules={[{ required: true, message: "" }]}
+                >
+                  <Input />
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  label="City"
+                  name="cityCode"
+                  rules={[{ required: true, message: "" }]}
+                ></Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  label="District"
+                  name="districtCode"
+                  rules={[{ required: true, message: "" }]}
+                ></Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  label="Ward"
+                  name="wardCode"
+                  rules={[{ required: true, message: "" }]}
+                ></Form.Item>
+              </Col>
+              <Col span={24}>
+                <Form.Item
+                  label="Address"
+                  name="address"
+                  rules={[{ required: true, message: "" }]}
+                >
+                  <Input />
+                </Form.Item>
+              </Col>
+            </Row>
+          </Card>
+        </Form>
 
-      {/* Lịch sử mua hàng */}
-      <Card size="medium" title="Lịch sử mua hàng">
-        <Table
-          columns={tableColumns}
-          dataSource={orderList.data}
-          rowKey="id"
-          pagination={false}
-          expandable={{
-            expandedRowRender: (record) => (
-              <>
-                <Table
-                  columns={tableColumnsDetail}
-                  dataSource={record.orderDetails}
-                  pagination={false}
-                />
+        {/* Lịch sử mua hàng */}
+        <Card size="medium" title="Lịch sử mua hàng">
+          <Table
+            columns={tableColumns}
+            dataSource={orderList.data}
+            rowKey="id"
+            pagination={false}
+            expandable={{
+              expandedRowRender: (record) => (
+                <>
+                  <Table
+                    columns={tableColumnsDetail}
+                    dataSource={record.orderDetails}
+                    pagination={false}
+                  />
 
-                {/* {record.orderDetails.map((item) => (
+                  {/* {record.orderDetails.map((item) => (
                   <Row key={item.id}>
                     <Col span={6}>{item.name}</Col>
                     <Col span={6}>{item.price}</Col>
@@ -171,11 +191,12 @@ function ProfilePage() {
                     <Col span={6}>{item.price * item.quantity}</Col>
                   </Row>
                 ))} */}
-              </>
-            ),
-          }}
-        />
-      </Card>
+                </>
+              ),
+            }}
+          />
+        </Card>
+      </S.ProfileContainer>
     </S.ProfileWrapper>
   );
 }

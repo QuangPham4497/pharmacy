@@ -1,7 +1,6 @@
 import * as S from "./styles";
 import {
   SmileOutlined,
-  StarOutlined,
   StarFilled,
   QuestionCircleOutlined,
 } from "@ant-design/icons";
@@ -18,7 +17,6 @@ import {
   notification,
   Popover,
   Tabs,
-  Table,
 } from "antd";
 import { TbTruckDelivery } from "react-icons/tb";
 import { GiMedicines } from "react-icons/gi";
@@ -32,7 +30,6 @@ import { PRODUCT_LIMIT } from "../../../constants/paging";
 
 import {
   getProductDetailAction,
-  getProductListAction,
   getSimilarProductListAction,
   getReviewListAction,
   sendReviewAction,
@@ -54,12 +51,8 @@ function ProductDetailPage() {
   const [reviewForm] = Form.useForm();
   const { userInfo } = useSelector((state) => state.auth);
   const { reviewList } = useSelector((state) => state.review);
-  const { productList, productDetail, similarproductList } = useSelector(
+  const { productDetail, similarproductList } = useSelector(
     (state) => state.product
-  );
-  console.log(
-    "🚀 ~ file: index.jsx:58 ~ ProductDetailPage ~ similarproductList:",
-    similarproductList
   );
 
   const contentPopover = (
@@ -152,18 +145,17 @@ function ProductDetailPage() {
   useEffect(() => {
     dispatch(getProductDetailAction({ id: id }));
     dispatch(getReviewListAction({ productId: id }));
-    dispatch(
-      getProductListAction({
-        page: 1,
-        limit: PRODUCT_LIMIT,
-      })
-    );
-    dispatch(
-      getSimilarProductListAction({
-        similarProductId: productDetail.data.categoryId,
-        limit: PRODUCT_LIMIT,
-      })
-    );
+  }, [id]);
+
+  useEffect(() => {
+    if (productDetail.data.categoryId) {
+      dispatch(
+        getSimilarProductListAction({
+          similarProductId: productDetail.data.categoryId,
+          limit: PRODUCT_LIMIT,
+        })
+      );
+    }
   }, [productDetail.data.categoryId]);
 
   const handleReview = (values) => {
@@ -228,7 +220,7 @@ function ProductDetailPage() {
         </Card>
       );
     });
-  }, []);
+  }, [reviewList.data]);
 
   const renderSimilarProductList = useMemo(() => {
     return similarproductList.data.map((item) => {
@@ -469,8 +461,9 @@ function ProductDetailPage() {
               <div
                 style={{
                   margin: " 0",
-                  borderRadius: 8,
-                  padding: "20px 20px 0px 20px",
+                  borderRadius: "0 0 8px 8px",
+                  padding: "20px 20px 10px 20px",
+                  backgroundColor: "#f7f7f7",
                 }}
               >
                 {userInfo.data.id && (
@@ -541,7 +534,7 @@ function ProductDetailPage() {
           <h2 style={{ margin: "0px 10px 0px 50px" }}>Sản phẩm tương tự</h2>
           <Swiper
             spaceBetween={15}
-            slidesPerView={6}
+            slidesPerView={5}
             pagination={{
               clickable: true,
             }}

@@ -613,6 +613,33 @@
       "createdAt": 1684417279156,
       "updatedAt": 1684417279156,
       "id": 4
+    },
+    {
+      "rate": 3,
+      "comment": "Thuoc tot",
+      "userId": 4,
+      "productId": 2,
+      "createdAt": 1684465489069,
+      "updatedAt": 1684465489069,
+      "id": 5
+    },
+    {
+      "rate": 1,
+      "comment": "thuoc chua tot",
+      "userId": 4,
+      "productId": 2,
+      "createdAt": 1684465544052,
+      "updatedAt": 1684465544053,
+      "id": 6
+    },
+    {
+      "rate": 3,
+      "comment": "san pham tot",
+      "userId": 2,
+      "productId": 1,
+      "createdAt": 1684504159660,
+      "updatedAt": 1684504159660,
+      "id": 7
     }
   ],
   "orders": [

@@ -52,7 +52,7 @@ export const ShowmoreButton = styled.div`
   }
 `;
 export const ProductReview = styled.div`
-  margin: 20px 100px 20px 10px;
+  margin: 20px 100px 0px 10px;
   padding: 0px;
   background-color: white;
   border-radius: 8px;

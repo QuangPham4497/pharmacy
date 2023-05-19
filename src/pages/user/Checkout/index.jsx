@@ -125,17 +125,16 @@ function CheckoutPage() {
 
   return (
     <S.CheckoutWrapper>
-      Cart List
       <Steps
         size="small"
         current={1}
         items={[
           {
-            title: "Cart",
+            title: "Giỏ hàng",
             icon: <ShoppingCartOutlined />,
           },
           {
-            title: "Checkout",
+            title: "Thanh toán",
             icon: <FormOutlined />,
           },
         ]}
@@ -146,8 +145,10 @@ function CheckoutPage() {
         pagination={false}
         rowKey="id"
       />
-      <Row justify="end">
-        <Col span={4}>Tổng tiền: {cartTotalPrice.toLocaleString()} VND</Col>
+      <Row justify="end" style={{ margin: "20px 10px" }}>
+        <Col span={4} style={{ textAlign: "center" }}>
+          <h3>Tổng tiền</h3> {cartTotalPrice.toLocaleString()} VND
+        </Col>
       </Row>
       <Form
         name="checkoutForm"
@@ -160,7 +161,7 @@ function CheckoutPage() {
           <Row gutter={[16, 16]}>
             <Col span={24}>
               <Form.Item
-                label="Full name"
+                label="Họ và tên"
                 name="fullName"
                 rules={[{ required: true, message: "" }]}
               >
@@ -178,7 +179,7 @@ function CheckoutPage() {
             </Col>
             <Col span={24}>
               <Form.Item
-                label="Phone Number"
+                label="Số điện thoại"
                 name="phoneNumber"
                 rules={[{ required: true, message: "" }]}
               >
@@ -187,7 +188,7 @@ function CheckoutPage() {
             </Col>
             <Col span={8}>
               <Form.Item
-                label="City"
+                label="Thành phố, tỉnh"
                 name="cityCode"
                 rules={[{ required: true, message: "" }]}
               >
@@ -206,7 +207,7 @@ function CheckoutPage() {
             </Col>
             <Col span={8}>
               <Form.Item
-                label="District"
+                label="Quận, huyện"
                 name="districtCode"
                 rules={[{ required: true, message: "" }]}
               >
@@ -225,7 +226,7 @@ function CheckoutPage() {
             </Col>
             <Col span={8}>
               <Form.Item
-                label="Ward"
+                label="Phường, xã"
                 name="wardCode"
                 rules={[{ required: true, message: "" }]}
               >
@@ -236,7 +237,7 @@ function CheckoutPage() {
             </Col>
             <Col span={24}>
               <Form.Item
-                label="Address"
+                label="Địa chỉ"
                 name="address"
                 rules={[{ required: true, message: "" }]}
               >
@@ -245,12 +246,12 @@ function CheckoutPage() {
             </Col>
           </Row>
         </Card>
-        <Row justify="space-between">
+        <Row justify="space-between" style={{ margin: "20px 10px" }}>
           <Button
             type="primary"
             onClick={() => navigate(ROUTES.USER.CART_LIST)}
           >
-            Prev
+            Trở về
           </Button>
           <Button type="primary" htmlType="submit">
             Thanh toán

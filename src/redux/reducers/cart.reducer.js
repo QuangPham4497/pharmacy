@@ -36,6 +36,7 @@ const cartReducer = createReducer(initialState, {
       ...state.cartList[productId],
       quantity: quantity,
     });
+    localStorage.setItem("cartList", JSON.stringify(newCartList));
     return {
       ...state,
       cartList: newCartList,
@@ -47,7 +48,7 @@ const cartReducer = createReducer(initialState, {
     const productId = state.cartList.findIndex((item) => item.id === id);
     const newCartList = [...state.cartList];
     newCartList.splice(productId, 1);
-
+    localStorage.setItem("cartList", JSON.stringify(newCartList));
     return {
       ...state,
       cartList: newCartList,

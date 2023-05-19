@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductListWrapper = styled.div`
   width: 100%;
   margin: 0;
-  background-color: #dee7f9;
+  background-color: #ffffff;
 `;
 export const ProductListContainer = styled.div`
   background-color: white;

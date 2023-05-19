@@ -22,7 +22,8 @@ function UserHeader() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { Search } = Input;
-  const onSearch = (value) => console.log(value);
+  const onSearch = (value) =>
+    navigate(ROUTES.USER.PRODUCT_LIST, { state: { searchKey: value } });
 
   const handleLogout = () => {
     dispatch(logoutAction());

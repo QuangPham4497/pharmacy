@@ -24,7 +24,7 @@ export const HeaderWrapper = styled.div`
   z-index: 99;
 
   ${HeaderContainer} {
-    min-width: 1320px;
+    max-width: 1320px;
     ${HeaderTop} {
       display: flex;
       justify-content: space-between;
@@ -42,7 +42,7 @@ export const HeaderWrapper = styled.div`
         }
         & p {
           border-radius: 20px;
-          background-color: #8f90e9;
+          background-color: #003cbf;
           padding: 5px 10px;
           color: white;
           font-size: 12px;
@@ -103,9 +103,9 @@ export const HeaderWrapper = styled.div`
         height: 54px;
 
         & .cart-content {
-          border-radius: 20px;
+          border-radius: 8px;
           background-color: #003cbf;
-          margin: 1px 10px;
+          margin: 1px 5px;
           height: 54px;
           min-width: 140px;
           display: flex;

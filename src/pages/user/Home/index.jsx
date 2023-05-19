@@ -146,7 +146,7 @@ function HomePage() {
           style={{
             width: "100%",
             height: "auto",
-            padding: "20px 100px 10px 100px",
+            padding: "20px 50px 10px",
             backgroundColor: "white",
             borderRadius: "8px",
           }}

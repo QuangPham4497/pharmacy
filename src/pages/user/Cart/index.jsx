@@ -76,17 +76,17 @@ function CartPage() {
 
   return (
     <S.CartWrapper>
-      Cart List
+      {/* <h3>Giỏ hàng</h3> */}
       <Steps
         size="small"
         current={0}
         items={[
           {
-            title: "Cart",
+            title: "Giỏ hàng",
             icon: <ShoppingCartOutlined />,
           },
           {
-            title: "Information",
+            title: "Thanh toán",
             icon: <FormOutlined />,
           },
         ]}
@@ -97,8 +97,10 @@ function CartPage() {
         pagination={false}
         rowKey="id"
       />
-      <Row justify="end">
-        <Col span={4}>Tổng tiền: {cartTotalPrice.toLocaleString()} VND</Col>
+      <Row justify="end" style={{ margin: "20px 10px" }}>
+        <Col span={4} style={{ textAlign: "center" }}>
+          <h3>Tổng tiền</h3> {cartTotalPrice.toLocaleString()} VND
+        </Col>
       </Row>
       <Row justify="end">
         <Button
@@ -106,7 +108,7 @@ function CartPage() {
           disabled={cartList.length === 0}
           onClick={() => navigate(ROUTES.USER.CHECKOUT_LIST)}
         >
-          Next
+          Tiếp theo
         </Button>
       </Row>
     </S.CartWrapper>

@@ -22,7 +22,7 @@ export const HomeWrapper = styled.div`
     & .container-category {
       height: auto;
       width: 100%;
-      padding: 20px 100px;
+      padding: 20px 50px;
 
       & .card {
         width: 100%;
@@ -72,7 +72,7 @@ export const HomeWrapper = styled.div`
 
   & .container-carousel {
     margin-bottom: 0px;
-    padding: 20px 100px 20px;
+    padding: 20px 50px 20px;
     background-color: white;
     width: 100%;
     height: auto;
