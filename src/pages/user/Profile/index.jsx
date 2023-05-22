@@ -31,6 +31,7 @@ function ProfilePage() {
   const initialValues = {
     fullName: userInfo.data.fullName,
     email: userInfo.data.email,
+    phoneNumber: userInfo.data.phoneNumber,
   };
 
   const tableColumns = [
@@ -103,7 +104,7 @@ function ProfilePage() {
             <Row gutter={[16, 16]}>
               <Col span={24}>
                 <Form.Item
-                  label="Fullname"
+                  label="Họ và tên"
                   name="fullName"
                   rules={[
                     {
@@ -126,40 +127,30 @@ function ProfilePage() {
               </Col>
               <Col span={24}>
                 <Form.Item
-                  label="Phone Number"
+                  label="Số điện thoại"
                   name="phoneNumber"
                   rules={[{ required: true, message: "" }]}
                 >
+                  <Input readOnly />
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item label="Thành phố, tỉnh" name="cityCode">
                   <Input />
                 </Form.Item>
               </Col>
               <Col span={8}>
-                <Form.Item
-                  label="City"
-                  name="cityCode"
-                  rules={[{ required: true, message: "" }]}
-                ></Form.Item>
+                <Form.Item label="Quận, huyện" name="districtCode">
+                  <Input />
+                </Form.Item>
               </Col>
               <Col span={8}>
-                <Form.Item
-                  label="District"
-                  name="districtCode"
-                  rules={[{ required: true, message: "" }]}
-                ></Form.Item>
-              </Col>
-              <Col span={8}>
-                <Form.Item
-                  label="Ward"
-                  name="wardCode"
-                  rules={[{ required: true, message: "" }]}
-                ></Form.Item>
+                <Form.Item label="Phường, xã" name="wardCode">
+                  <Input />
+                </Form.Item>
               </Col>
               <Col span={24}>
-                <Form.Item
-                  label="Address"
-                  name="address"
-                  rules={[{ required: true, message: "" }]}
-                >
+                <Form.Item label="Địa chỉ" name="address">
                   <Input />
                 </Form.Item>
               </Col>
@@ -168,7 +159,11 @@ function ProfilePage() {
         </Form>
 
         {/* Lịch sử mua hàng */}
-        <Card size="medium" title="Lịch sử mua hàng">
+        <Card
+          size="medium"
+          title="Lịch sử mua hàng"
+          style={{ marginTop: "20px" }}
+        >
           <Table
             columns={tableColumns}
             dataSource={orderList.data}

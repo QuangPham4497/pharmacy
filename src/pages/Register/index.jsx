@@ -35,6 +35,7 @@ function RegisterPage() {
           fullName: values.fullName,
           email: values.email,
           password: values.password,
+          phoneNumber: values.phoneNumber,
           role: "user",
         },
 
@@ -75,7 +76,7 @@ function RegisterPage() {
           autoComplete="off"
         >
           <Form.Item
-            label="Full Name"
+            label="Họ và tên"
             name="fullName"
             rules={[
               {
@@ -105,9 +106,21 @@ function RegisterPage() {
           >
             <Input />
           </Form.Item>
-
           <Form.Item
-            label="Password"
+            label="Số điện thoại"
+            name="phoneNumber"
+            rules={[
+              {
+                required: true,
+                whitespace: true,
+                message: "Please input your numberphone",
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            label="Mật khẩu"
             name="password"
             rules={[
               {
@@ -120,7 +133,7 @@ function RegisterPage() {
           </Form.Item>
 
           <Form.Item
-            label="Confirm Password"
+            label="Xác nhận mật khẩu"
             name="confirm"
             dependencies={["password"]}
             hasFeedback
@@ -134,7 +147,9 @@ function RegisterPage() {
                   if (!value || getFieldValue("password") === value) {
                     return Promise.resolve();
                   }
-                  return Promise.reject(new Error("Password is not match!"));
+                  return Promise.reject(
+                    new Error("Confirm Password is not correct!")
+                  );
                 },
               }),
             ]}

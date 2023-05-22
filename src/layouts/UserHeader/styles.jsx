@@ -12,19 +12,17 @@ export const Header = styled.div``;
 
 export const HeaderWrapper = styled.div`
   background-color: #0f62f9;
-
   height: 150px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 5px 50px;
+  padding-left: 80px;
+  padding-right: 80px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
 
   ${HeaderContainer} {
-    max-width: 1320px;
+    max-width: 1400px;
     ${HeaderTop} {
       display: flex;
       justify-content: space-between;

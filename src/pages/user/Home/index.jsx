@@ -139,246 +139,197 @@ function HomePage() {
 
   return (
     <S.HomeWrapper>
-      {/* Slide Card quảng cáo */}
-      <Row gutter={16}>
-        <Col
-          span={24}
-          style={{
-            width: "100%",
-            height: "auto",
-            padding: "20px 50px 10px",
-            backgroundColor: "white",
-            borderRadius: "8px",
-          }}
-        >
-          <Carousel autoplay>
-            <div>
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "8px",
-                }}
-                src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280%20(x1.5)-1680254665949.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "8px",
-                }}
-                src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280%20(x1.5)-1680254579832.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "8px",
-                }}
-                src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280x1.5-1681706971861.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "8px",
-                }}
-                src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280%20(x1.5)-1680852770450.png"
-                alt=""
-              />
-            </div>
-          </Carousel>
-        </Col>
-      </Row>
-
-      {/* Category sản phẩm */}
-      <div className="container">
-        <div className="title">
-          <h3>Danh mục sản phẩm</h3>
-        </div>
-        <Row className="container-category">
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10379.png" />
-                </div>
-                <div className="content">Dược phẩm</div>
+      <div className="wrapper">
+        {/* Slide Card quảng cáo */}
+        <Row gutter={16}>
+          <Col
+            span={24}
+            style={{
+              width: "100%",
+              height: "auto",
+              padding: "20px 50px 10px",
+              backgroundColor: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Carousel autoplay>
+              <div>
+                <img
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "8px",
+                  }}
+                  src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280%20(x1.5)-1680254665949.jpg"
+                  alt=""
+                />
               </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378.png" />
-                </div>
-                <div className="content">Chăm sóc sức khoẻ</div>
+              <div>
+                <img
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "8px",
+                  }}
+                  src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280%20(x1.5)-1680254579832.png"
+                  alt=""
+                />
               </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-1.png" />
-                </div>
-                <div className="content">Chăm sóc cá nhân</div>
+              <div>
+                <img
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "8px",
+                  }}
+                  src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280x1.5-1681706971861.png"
+                  alt=""
+                />
               </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-2.png" />
-                </div>
-                <div className="content">Sản phẩm tiện lợi</div>
+              <div>
+                <img
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "8px",
+                  }}
+                  src="https://data-service.pharmacity.io/pmc-ecm-webapp-config-api/production/banner/913x280%20(x1.5)-1680852770450.png"
+                  alt=""
+                />
               </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-3.png" />
-                </div>
-                <div className="content">Thực phẩm chức năng</div>
-              </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-4.png" />
-                </div>
-                <div className="content">Mẹ và Bé</div>
-              </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-5.png" />
-                </div>
-                <div className="content">Chăm sóc sắc đẹp</div>
-              </div>
-            </div>
-          </Col>
-          <Col span={3}>
-            <div className="card">
-              <div className="card-content">
-                <div className="img">
-                  <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-6.png" />
-                </div>
-                <div className="content">Thiết bị y tế</div>
-              </div>
-            </div>
+            </Carousel>
           </Col>
         </Row>
-        {/* <div className="container-category">
-          <Swiper slidesPerView={8}>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10379.png" />
+        {/* Category sản phẩm */}
+        <div className="container">
+          <div className="title">
+            <h3>Danh mục sản phẩm</h3>
+          </div>
+          <Row className="container-category">
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10379.png" />
+                  </div>
+                  <div className="content">Dược phẩm</div>
+                </div>
               </div>
-              <div className="content">Dược phẩm</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378.png" />
+                  </div>
+                  <div className="content">Chăm sóc sức khoẻ</div>
+                </div>
               </div>
-              <div className="content">Chăm sóc sức khoẻ</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-1.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-1.png" />
+                  </div>
+                  <div className="content">Chăm sóc cá nhân</div>
+                </div>
               </div>
-              <div className="content">Chăm sóc cá nhân</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-2.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-2.png" />
+                  </div>
+                  <div className="content">Sản phẩm tiện lợi</div>
+                </div>
               </div>
-              <div className="content">Sản phẩm tiện lợi</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-3.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-3.png" />
+                  </div>
+                  <div className="content">Thực phẩm chức năng</div>
+                </div>
               </div>
-              <div className="content">Thực phẩm chức năng</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-4.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-4.png" />
+                  </div>
+                  <div className="content">Mẹ và Bé</div>
+                </div>
               </div>
-              <div className="content">Mẹ và Bé</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-5.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-5.png" />
+                  </div>
+                  <div className="content">Chăm sóc sắc đẹp</div>
+                </div>
               </div>
-              <div className="content">Chăm sóc sắc đẹp</div>
-            </SwiperSlide>
-            <SwiperSlide className="card-content">
-              <div className="img">
-                <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-6.png" />
+            </Col>
+            <Col span={3}>
+              <div className="card">
+                <div className="card-content">
+                  <div className="img">
+                    <img src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/category-icons/Group_10378-6.png" />
+                  </div>
+                  <div className="content">Thiết bị y tế</div>
+                </div>
               </div>
-              <div className="content">Thiết bị y tế</div>
-            </SwiperSlide>
+            </Col>
+          </Row>
+        </div>
+      </div>
+
+      {/* Slide card sản phẩm */}
+      <div className="wrapper-carousel">
+        <div className="container-carousel">
+          <div className="title">
+            <h3>Không để Covid quay trở lại</h3>
+          </div>
+
+          <Swiper
+            className="slide"
+            slidesPerView={5}
+            spaceBetween={15}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Navigation]}
+            navigation={true}
+          >
+            {renderProductList()}
           </Swiper>
-        </div> */}
-      </div>
-
-      {/* Slide card sản phẩm */}
-      <div className="container-carousel">
-        <div className="title">
-          <h3>Không để Covid quay trở lại</h3>
         </div>
 
-        <Swiper
-          className="slide"
-          slidesPerView={5}
-          spaceBetween={15}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination, Navigation]}
-          navigation={true}
-        >
-          {renderProductList()}
-        </Swiper>
-      </div>
+        {/* Slide card sản phẩm */}
+        <div className="container-carousel">
+          <div className="title">
+            <h3>Tăng sức đề kháng</h3>
+          </div>
 
-      {/* Slide card sản phẩm */}
-      <div className="container-carousel">
-        <div className="title">
-          <h3>Tăng sức đề kháng</h3>
+          <Swiper
+            className="slide"
+            slidesPerView={5}
+            spaceBetween={15}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+          >
+            {renderProductList1()}
+          </Swiper>
         </div>
-
-        <Swiper
-          className="slide"
-          slidesPerView={5}
-          spaceBetween={15}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-        >
-          {renderProductList1()}
-        </Swiper>
       </div>
     </S.HomeWrapper>
   );

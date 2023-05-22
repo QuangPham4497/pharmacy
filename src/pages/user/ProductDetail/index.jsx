@@ -226,26 +226,20 @@ function ProductDetailPage() {
     return similarproductList.data.map((item) => {
       return (
         <SwiperSlide style={{ padding: "10px 0px 30px 0px" }}>
-          <Col key={item.id} span={24}>
+          <Col span={24} className="product-card-wrapper" key={item.id}>
             <Link
               to={generatePath(ROUTES.USER.PRODUCT_DETAIL, { id: item.id })}
             >
-              <Card
-                title={
-                  <>
-                    {item.name}
-                    <h4>({item.category?.name})</h4>
-                  </>
-                }
-                size="small"
-                className="product-card-global"
-              >
-                <img
-                  style={{ width: "100%", height: "100%" }}
-                  src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P16412_1_l.webp"
-                />
-                <h3 style={{ marginBottom: 10 }}>Price: {item.price}</h3>
-              </Card>
+              <div className="product-card-container">
+                <div className="img">
+                  <img src={item.image} />
+                </div>
+                <h3>{item.name}</h3>
+                <div className="category-product">
+                  <i>{item.category?.name}</i>
+                </div>
+                <h4>Giá: {item.price.toLocaleString()}/sp</h4>
+              </div>
             </Link>
           </Col>
         </SwiperSlide>
@@ -257,293 +251,321 @@ function ProductDetailPage() {
     <S.ProductDetailWrapper>
       <Spin spinning={productDetail.load}>
         {/* Chi tiết sản phẩm */}
-        <S.ProductDetail>
-          <Row gutter={[16, 16]} style={{ padding: "20px 100px" }}>
-            <Col span={8}>
-              <Card
-                size="small"
-                style={{
-                  border: "#e5e5e5 1px solid",
-                  borderRadius: 8,
-                }}
-              >
-                <img
-                  style={{ width: "100%", height: "100%" }}
-                  src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P16412_1_l.webp"
-                />
-              </Card>
-            </Col>
-            <Col span={16}>
-              <Row gutter={[10, 10]}>
-                <Col span={24}>
-                  <div style={{ marginLeft: 10 }}>
-                    <h2>{productDetail.data.name}</h2>
-                    <h4>({productDetail.data.category?.name})</h4>
-                    <Rate value={totalRate / reviewList.data.length} disabled />
-                  </div>
-                </Col>
-                <Col span={14}>
-                  <div>
-                    <p style={{ display: "flex", justifyContent: "flex-end" }}>
-                      <i>
-                        <u>Mã số: {id}</u>
-                      </i>
-                    </p>
+        <S.ProductDetailContainer>
+          <S.ProductDetail>
+            <Row gutter={[16, 16]}>
+              <Col span={8}>
+                <Card
+                  size="small"
+                  style={{
+                    border: "#e5e5e5 1px solid",
+                    borderRadius: 8,
+                  }}
+                >
+                  <img
+                    style={{ width: "100%", height: "400px" }}
+                    src={productDetail.data.image}
+                  />
+                </Card>
+              </Col>
+              <Col span={16}>
+                <Row gutter={[10, 10]}>
+                  <Col span={24}>
+                    <div style={{ marginLeft: 10 }}>
+                      <h2>{productDetail.data.name}</h2>
+                      <h4>({productDetail.data.category?.name})</h4>
+                      <Rate
+                        value={totalRate / reviewList.data.length}
+                        disabled
+                      />
+                    </div>
+                  </Col>
+                  <Col span={14}>
+                    <div>
+                      <p
+                        style={{ display: "flex", justifyContent: "flex-end" }}
+                      >
+                        <i>
+                          <u>Mã số: {id}</u>
+                        </i>
+                      </p>
+                      <div
+                        style={{
+                          borderRadius: 10,
+                          border: "white 5px solid",
+                          backgroundColor: "#ededed",
+                          padding: 40,
+                          width: "100%",
+                        }}
+                      >
+                        <h2>
+                          {productDetail.data.price?.toLocaleString()} VND
+                        </h2>
+                        <span>Mua hàng và tích điểm thành viên</span>
+                        <span style={{ margin: 10, cursor: "pointer" }}>
+                          <Popover
+                            content={contentPopover}
+                            title="Đặc quyền thành viên vip"
+                            trigger="hover"
+                            placement="bottom"
+                          >
+                            <QuestionCircleOutlined />
+                          </Popover>
+                        </span>
+                      </div>
+                    </div>
+
                     <div
                       style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        margin: 10,
+                        gap: 10,
+                      }}
+                    >
+                      <div>
+                        <InputNumber
+                          min={1}
+                          value={quantity}
+                          onChange={(value) => setQuantity(value)}
+                        />
+                      </div>
+                      <div>
+                        <Button
+                          type="primary"
+                          onClick={() => handleAddtocart()}
+                        >
+                          Thêm vào giỏ hàng
+                        </Button>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col span={10}>
+                    <button
+                      style={{
                         borderRadius: 8,
-                        border: "white 5px solid",
-                        backgroundColor: "#efeaead6",
-                        padding: 40,
+                        border: " #e5e5e5  1px solid",
+                        backgroundColor: "white",
+                        padding: 10,
+                        margin: 10,
                         width: "100%",
                       }}
                     >
-                      <h2>{productDetail.data.price?.toLocaleString()} VND</h2>
-                      <span>Mua hàng và tích điểm thành viên</span>
-                      <span style={{ margin: 10, cursor: "pointer" }}>
-                        <Popover
-                          content={contentPopover}
-                          title="Đặc quyền thành viên vip"
-                          trigger="hover"
-                          placement="bottom"
-                        >
-                          <QuestionCircleOutlined />
-                        </Popover>
-                      </span>
-                    </div>
-                  </div>
+                      <h2>Các hình thức giao hàng</h2>
+                      <h3>
+                        <StarFilled style={{ color: "rgb(93, 172, 70)" }} />
+                        <span>
+                          <span
+                            style={{
+                              color: "rgb(93, 172, 70)",
+                              margin: " 0 4px",
+                            }}
+                          >
+                            Freeship
+                          </span>
+                          cho đơn hàng từ
+                          <span
+                            style={{
+                              color: "rgb(93, 172, 70)",
+                              margin: " 0 4px",
+                            }}
+                          >
+                            300.000 đ
+                          </span>
+                        </span>
+                      </h3>
+                      <Button style={{ margin: 10, borderRadius: "20px" }}>
+                        Viettel Post
+                      </Button>
+                      <Button style={{ margin: 10, borderRadius: "20px" }}>
+                        Ahamove
+                      </Button>
+                    </button>
+                    <button
+                      style={{
+                        borderRadius: 8,
+                        border: " #e5e5e5  1px solid",
+                        backgroundColor: "white",
+                        padding: 10,
+                        margin: 10,
+                        width: "100%",
+                        height: "150px",
+                      }}
+                    >
+                      <Row gutter={[5, 0]}>
+                        <Col span={8}>
+                          <TbTruckDelivery
+                            style={{
+                              fontSize: "40px",
+                              color: "rgb(15, 98, 249)",
+                            }}
+                          />
+                          <h5>
+                            <i>
+                              Miễn phí vận chuyển cho đơn hàng từ 300.000 đ.
+                            </i>
+                          </h5>
+                        </Col>
+                        <Col span={8}>
+                          <GiMedicines
+                            style={{
+                              fontSize: "40px",
+                              color: "rgb(15, 98, 249)",
+                            }}
+                          />
+                          <h5>
+                            <i>Đủ thuốc chuẩn, tư vấn tốt.</i>
+                          </h5>
+                        </Col>
+                        <Col span={8}>
+                          <MdPhonelinkSetup
+                            style={{
+                              fontSize: "40px",
+                              color: "rgb(15, 98, 249)",
+                            }}
+                          />
+                          <h5>
+                            <i>
+                              Tích lũy điểm thưởng và sử dụng điểm cho mọi giao
+                              dịch.
+                            </i>
+                          </h5>
+                        </Col>
+                      </Row>
+                    </button>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </S.ProductDetail>
+        </S.ProductDetailContainer>
 
+        {/* thông tin sản phẩm và review */}
+        <S.ProductContentWrapper>
+          <S.ProductContentContainer>
+            <Row>
+              <Col span={16}>
+                {/* Mô tả sản phẩm */}
+                <S.ProductContent>
+                  <Tabs
+                    defaultActiveKey="1"
+                    items={itemsTab}
+                    onChange={onChange}
+                  />
+                </S.ProductContent>
+              </Col>
+              <Col span={8}>
+                {/* review sản phẩm */}
+                <S.ProductReview>
                   <div
                     style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      margin: 10,
-                      gap: 10,
+                      margin: "0",
+                      backgroundColor: "#e2e2e6",
+                      borderRadius: "8px 8px 0 0",
+                      padding: "20px 20px 20px 20px",
+                      overflowY: "scroll",
+                      width: "auto",
+                      height: "400px",
                     }}
                   >
-                    <div>
-                      <InputNumber
-                        min={1}
-                        value={quantity}
-                        onChange={(value) => setQuantity(value)}
-                      />
-                    </div>
-                    <div>
-                      <Button type="primary" onClick={() => handleAddtocart()}>
-                        Add to Cart
-                      </Button>
-                    </div>
+                    <h2>Đánh giá từ người dùng</h2>
+                    {renderReviewList}
                   </div>
-                </Col>
-                <Col span={10}>
-                  <button
+                  <div
                     style={{
-                      borderRadius: 8,
-                      border: " #e5e5e5  1px solid",
+                      margin: "0",
+                      borderRadius: "0 0 8px 8px",
+                      padding: "20px 20px 0px 20px",
                       backgroundColor: "white",
-                      padding: 10,
-                      margin: 10,
-                      width: "100%",
                     }}
                   >
-                    <h2>Các hình thức giao hàng</h2>
-                    <h3>
-                      <StarFilled style={{ color: "rgb(93, 172, 70)" }} />
-                      <span>
-                        <span
-                          style={{
-                            color: "rgb(93, 172, 70)",
-                            margin: " 0 4px",
+                    {userInfo.data.id ? (
+                      <div>
+                        <h3>Bình luận</h3>
+                        <Form
+                          form={reviewForm}
+                          name="reviewForm"
+                          layout="vertical"
+                          labelCol={{
+                            span: 8,
                           }}
+                          wrapperCol={{
+                            span: 16,
+                          }}
+                          initialValues={{
+                            remember: true,
+                          }}
+                          onFinish={(values) => handleReview(values)}
+                          autoComplete="off"
                         >
-                          Freeship
-                        </span>
-                        cho đơn hàng từ
-                        <span
-                          style={{
-                            color: "rgb(93, 172, 70)",
-                            margin: " 0 4px",
-                          }}
-                        >
-                          300.000 đ
-                        </span>
-                      </span>
-                    </h3>
-                    <Button style={{ margin: 10, borderRadius: "20px" }}>
-                      Viettel Post
-                    </Button>
-                    <Button style={{ margin: 10, borderRadius: "20px" }}>
-                      Ahamove
-                    </Button>
-                  </button>
-                  <button
-                    style={{
-                      borderRadius: 8,
-                      border: " #e5e5e5  1px solid",
-                      backgroundColor: "white",
-                      padding: 10,
-                      margin: 10,
-                      width: "100%",
-                      height: "150px",
-                    }}
-                  >
-                    <Row gutter={[5, 0]}>
-                      <Col span={8}>
-                        <TbTruckDelivery
-                          style={{
-                            fontSize: "40px",
-                            color: "rgb(15, 98, 249)",
-                          }}
-                        />
-                        <h5>
-                          <i>Miễn phí vận chuyển cho đơn hàng từ 300.000 đ.</i>
-                        </h5>
-                      </Col>
-                      <Col span={8}>
-                        <GiMedicines
-                          style={{
-                            fontSize: "40px",
-                            color: "rgb(15, 98, 249)",
-                          }}
-                        />
-                        <h5>
-                          <i>Đủ thuốc chuẩn, tư vấn tốt.</i>
-                        </h5>
-                      </Col>
-                      <Col span={8}>
-                        <MdPhonelinkSetup
-                          style={{
-                            fontSize: "40px",
-                            color: "rgb(15, 98, 249)",
-                          }}
-                        />
-                        <h5>
-                          <i>
-                            Tích lũy điểm thưởng và sử dụng điểm cho mọi giao
-                            dịch.
-                          </i>
-                        </h5>
-                      </Col>
-                    </Row>
-                  </button>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </S.ProductDetail>
+                          <Form.Item
+                            label="Rate"
+                            name="rate"
+                            rules={[
+                              {
+                                required: true,
+                                message: "",
+                              },
+                            ]}
+                          >
+                            <Rate />
+                          </Form.Item>
 
-        <Row>
-          <Col span={14}>
-            {/* Mô tả sản phẩm */}
-            <S.ProductContent>
-              <Tabs defaultActiveKey="1" items={itemsTab} onChange={onChange} />
-            </S.ProductContent>
-          </Col>
-          <Col span={10}>
-            {/* review sản phẩm */}
-            <S.ProductReview>
-              <div
-                style={{
-                  margin: "0",
-                  gap: 20,
-                  backgroundColor: "#e2e2e6",
-                  borderRadius: "8px 8px 0 0",
-                  padding: "20px 20px 20px 20px",
-                  overflowY: "scroll",
-                  width: "auto",
-                  height: "400px",
-                }}
-              >
-                <h2>Đánh giá từ người dùng</h2>
-                {renderReviewList}
-              </div>
-              <div
-                style={{
-                  margin: " 0",
-                  borderRadius: "0 0 8px 8px",
-                  padding: "20px 20px 10px 20px",
-                  backgroundColor: "#f7f7f7",
-                }}
-              >
-                {userInfo.data.id && (
-                  <div>
-                    <h3>Bình luận</h3>
-                    <Form
-                      form={reviewForm}
-                      name="reviewForm"
-                      layout="vertical"
-                      labelCol={{
-                        span: 8,
-                      }}
-                      wrapperCol={{
-                        span: 16,
-                      }}
-                      initialValues={{
-                        remember: true,
-                      }}
-                      onFinish={(values) => handleReview(values)}
-                      autoComplete="off"
-                    >
-                      <Form.Item
-                        label="Rate"
-                        name="rate"
-                        rules={[
-                          {
-                            required: true,
-                            message: "",
-                          },
-                        ]}
-                      >
-                        <Rate />
-                      </Form.Item>
+                          <Form.Item
+                            label="Comment"
+                            name="comment"
+                            rules={[
+                              {
+                                required: true,
+                                message: "",
+                              },
+                            ]}
+                          >
+                            <Input.TextArea autoSize />
+                          </Form.Item>
 
-                      <Form.Item
-                        label="Comment"
-                        name="comment"
-                        rules={[
-                          {
-                            required: true,
-                            message: "",
-                          },
-                        ]}
-                      >
-                        <Input.TextArea autoSize />
-                      </Form.Item>
-
-                      <Form.Item
-                        wrapperCol={{
-                          offset: 8,
-                          span: 16,
-                        }}
-                      >
-                        <Button type="primary" htmlType="submit">
-                          Gửi
-                        </Button>
-                      </Form.Item>
-                    </Form>
+                          <Form.Item
+                            wrapperCol={{
+                              offset: 8,
+                              span: 16,
+                            }}
+                          >
+                            <Button type="primary" htmlType="submit">
+                              Gửi
+                            </Button>
+                          </Form.Item>
+                        </Form>
+                      </div>
+                    ) : (
+                      <h3>Vui lòng đăng nhập để bình luận!</h3>
+                    )}
                   </div>
-                )}
-              </div>
-            </S.ProductReview>
-          </Col>
-        </Row>
+                </S.ProductReview>
+              </Col>
+            </Row>
+          </S.ProductContentContainer>
+        </S.ProductContentWrapper>
 
         {/* Sản phẩm tương tự */}
-        <S.SimilarProduct>
-          <h2 style={{ margin: "0px 10px 0px 50px" }}>Sản phẩm tương tự</h2>
-          <Swiper
-            spaceBetween={15}
-            slidesPerView={5}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-          >
-            {renderSimilarProductList}
-          </Swiper>
-        </S.SimilarProduct>
+        <S.SimilarProductContainer>
+          <S.SimilarProduct>
+            <h2 style={{ padding: "20px 10px 0px 20px" }}>
+              Có thể bạn quan tâm?
+            </h2>
+            <Swiper
+              spaceBetween={15}
+              slidesPerView={5}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+            >
+              {renderSimilarProductList}
+            </Swiper>
+          </S.SimilarProduct>
+        </S.SimilarProductContainer>
       </Spin>
     </S.ProductDetailWrapper>
   );

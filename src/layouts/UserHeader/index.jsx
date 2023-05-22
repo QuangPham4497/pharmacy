@@ -27,6 +27,7 @@ function UserHeader() {
 
   const handleLogout = () => {
     dispatch(logoutAction());
+    navigate(ROUTES.USER.HOME);
     notification.open({
       message: "Đăng xuất thành công!",
       icon: (

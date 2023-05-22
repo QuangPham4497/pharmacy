@@ -14,6 +14,7 @@ function ProductList() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { state } = useLocation();
+
   const { productList } = useSelector((state) => state.product);
   const { categoryList } = useSelector((state) => state.category);
   const [filterParams, setFilterParams] = useState({
@@ -83,7 +84,12 @@ function ProductList() {
   };
 
   const navigateToDetail = (item) => {
-    navigate(generatePath(ROUTES.USER.PRODUCT_DETAIL, { id: item.id }));
+    navigate(
+      generatePath(ROUTES.USER.PRODUCT_DETAIL, {
+        id: item.id,
+        image: item.image,
+      })
+    );
   };
 
   const handleShowMore = () => {
@@ -112,26 +118,28 @@ function ProductList() {
   const renderProductList = useMemo(() => {
     return productList.data.map((item, index) => {
       return (
-        <Col key={item.id} span={6}>
-          <Card title={item.name} size="small" className="product-card-global">
-            <span>{item.category?.name}</span>
-            <img
-              style={{ width: "100%", height: "100%" }}
-              src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/products/P16412_1_l.webp"
-            />
-            <h3>Price: {item.price.toLocaleString()}</h3>
+        <Col span={6} className="product-card-wrapper" key={item.id}>
+          <div className="product-card-container">
+            <div className="img">
+              <img src={item.image} />
+            </div>
+            <h3>{item.name}</h3>
+            <div className="category-product">
+              <i>{item.category?.name}</i>
+            </div>
+            <h4>Giá: {item.price.toLocaleString()}/sp</h4>
             {/* <Link
               to={generatePath(ROUTES.USER.PRODUCT_DETAIL, { id: item.id })}
             > */}
             <Button
               type="primary"
-              // style={{ backgroundColor: "rgb(93, 172, 70)" }}
+              style={{ backgroundColor: "rgb(93, 172, 70)" }}
               onClick={() => navigateToDetail(item)}
             >
               Xem chi tiết
             </Button>
             {/* </Link> */}
-          </Card>
+          </div>
         </Col>
       );
     });
@@ -179,7 +187,7 @@ function ProductList() {
               </Col>
             </Row>
             <Spin spinning={productList.load}>
-              <Row gutter={[16, 16]}>{renderProductList}</Row>
+              <Row>{renderProductList}</Row>
             </Spin>
             {productList.data.length !== productList.meta.total && (
               <Row justify="center">

@@ -7,9 +7,7 @@ export const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #ededed;
+  overflow: hidden;
 `;
-export const MainContainer = styled.div`
-  max-width: 1320px;
-  width: 100%;
-`;
+export const MainContainer = styled.div``;

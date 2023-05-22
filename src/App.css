@@ -17,7 +17,7 @@
 }
 .product-card-global:hover {
   background-color: white;
-  border: whitesmoke 2px solid;
+  border: rgb(93, 172, 70) 2px solid;
   transform: scale(1.05);
   transition: 0.2s ease;
 }
