@@ -1,5 +1,7 @@
 import { put, takeEvery } from "redux-saga/effects";
 import axios from "axios";
+import { notification } from "antd";
+import { SmileOutlined } from "@ant-design/icons";
 
 import { AUTH_ACTION, REQUEST, SUCCESS, FAIL } from "../constants";
 
@@ -15,6 +17,16 @@ function* loginSaga(action) {
       payload: {
         data: result.data,
       },
+    });
+    notification.success({
+      message: "Đăng nhập thành công!",
+      icon: (
+        <SmileOutlined
+          style={{
+            color: "#108ee9",
+          }}
+        />
+      ),
     });
   } catch (e) {
     yield put({
@@ -38,6 +50,16 @@ function* registerSaga(action) {
       payload: {
         data: result.data,
       },
+    });
+    notification.success({
+      message: "Đăng kí thành công!",
+      icon: (
+        <SmileOutlined
+          style={{
+            color: "#108ee9",
+          }}
+        />
+      ),
     });
   } catch (e) {
     yield put({

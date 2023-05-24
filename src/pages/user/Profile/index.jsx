@@ -5,6 +5,8 @@ import { Table } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import moment from "moment";
 
+import { Navigate } from "react-router-dom";
+import { ROUTES } from "../../../constants/routes";
 import { getOrderList } from "redux/actions";
 
 function ProfilePage() {
@@ -12,6 +14,7 @@ function ProfilePage() {
   const [infomationForm] = Form.useForm();
 
   const { userInfo } = useSelector((state) => state.auth);
+  console.log("🚀 ~ file: index.jsx:18 ~ ProfilePage ~ userInfo:", userInfo);
 
   const { orderList } = useSelector((state) => state.order);
 
@@ -88,6 +91,11 @@ function ProfilePage() {
       render: (record, orderDetails) => `${orderDetails.quantity}`,
     },
   ];
+
+  // check user id
+  if (!userInfo.data.id) {
+    return <Navigate to={ROUTES.USER.HOME} />;
+  }
 
   return (
     <S.ProfileWrapper>

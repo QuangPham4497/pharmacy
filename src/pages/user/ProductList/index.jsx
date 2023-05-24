@@ -87,7 +87,6 @@ function ProductList() {
     navigate(
       generatePath(ROUTES.USER.PRODUCT_DETAIL, {
         id: item.id,
-        image: item.image,
       })
     );
   };
@@ -165,15 +164,15 @@ function ProductList() {
           </Col>
           <Col span={18} style={{ borderLeft: "whitesmoke 2px solid" }}>
             <Row gutter={[16, 16]} style={{ marginBottom: 0 }}>
-              <Col span={21}>
+              <Col span={18}>
                 <Input
                   style={{ borderRadius: 8 }}
                   value={filterParams.searchKey}
                   onChange={(e) => handleFilter("searchKey", e.target.value)}
-                  placeholder="Tim kiem"
+                  placeholder="Tìm kiếm loại thuốc"
                 />
               </Col>
-              <Col span={3}>
+              <Col span={6}>
                 <Select
                   onChange={(value) => handleFilter("sort", value)}
                   placeholder="Sắp xếp"

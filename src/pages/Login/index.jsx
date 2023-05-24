@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 import { Button, Checkbox, Form, Input, notification } from "antd";
-import { SmileOutlined } from "@ant-design/icons";
+import { SmileOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -46,16 +46,16 @@ function LoginPage() {
           ),
       })
     );
-    notification.success({
-      message: "Đăng nhập thành công!",
-      icon: (
-        <SmileOutlined
-          style={{
-            color: "#108ee9",
-          }}
-        />
-      ),
-    });
+    // notification.success({
+    //   message: "Đăng nhập thành công!",
+    //   icon: (
+    //     <SmileOutlined
+    //       style={{
+    //         color: "#108ee9",
+    //       }}
+    //     />
+    //   ),
+    // });
   };
 
   if (accessToken) return <Navigate to={ROUTES.USER.HOME} />;
@@ -135,6 +135,15 @@ function LoginPage() {
             </i>
           </Link>
         </h5>
+        <div style={{ textAlign: "center", marginTop: "10px" }}>
+          <Button
+            type="primary"
+            ghost
+            onClick={() => navigate(ROUTES.USER.HOME)}
+          >
+            <ArrowLeftOutlined />
+          </Button>
+        </div>
       </S.LoginContainer>
     </S.LoginWrapper>
   );

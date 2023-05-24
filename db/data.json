@@ -59,6 +59,36 @@
       "createdAt": 1684464373522,
       "updatedAt": 1684464373522,
       "id": 6
+    },
+    {
+      "email": "quang6@gmail.com",
+      "password": "$2a$10$UVokZcJA0G4guvF1T0OSsek7/dxFOEzJ9Cet0WIRTd34BBBmhfChO",
+      "fullName": "quang6",
+      "phoneNumber": "0987654321",
+      "role": "user",
+      "createdAt": 1684900843096,
+      "updatedAt": 1684900843096,
+      "id": 7
+    },
+    {
+      "email": "quang7@gmail.com",
+      "password": "$2a$10$4FZLZ2qOH9skoE6R/LmvXuA4BmRC1ZBrcnd8iYl5tIXC8PS.iF2gS",
+      "fullName": "quang7",
+      "phoneNumber": "0987654321",
+      "role": "user",
+      "createdAt": 1684901020946,
+      "updatedAt": 1684901020946,
+      "id": 8
+    },
+    {
+      "email": "quang10@gmail.com",
+      "password": "$2a$10$8qmCG.CExXp9Fb4tP8iyGe/VrCg9Tzhm/7ii77GKg7gg5fs/dHabe",
+      "fullName": "quang10",
+      "phoneNumber": "0123456789",
+      "role": "user",
+      "createdAt": 1684924890627,
+      "updatedAt": 1684924890627,
+      "id": 9
     }
   ],
   "products": [
@@ -325,7 +355,7 @@
     {
       "id": 27,
       "name": "Bàn chải đánh răng cho răng ê buốt Sensodyne (Vỉ 2 cây)",
-      "price": "41000",
+      "price": 41000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P18076_1_l-thumbnail-255x255.webp",
       "describe": "<p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Hiện chưa có thông tin cho sản phẩm này</span></p>",
       "infomation": "<p>Công dụng</p><p>Ngừa sâu răng, bảo vệ nướu, bổ sung men răng giúp răng chắc khỏe và hơi thở thơm mát.</p><p>Thành phần</p><p>Aqua, Hydrated Silica, Sorbitol, Glycerin, Sodium Lauryl Sulfate, Xanthan Gum, Aroma...</p><p>Cách sử dụng</p><p>- Chải sạch răng 2 lần/ngày nhưng không quá 3 lần/ngày hoặc theo hướng dẫn của Nha sỹ. Hạn chế nuốt phải và nhổ ra rau khi đánh xong.</p><p>- Trẻ em từ 6 tuổi trở xuống chỉ sử dụng một lượng nhỏ bằng hạt đậu dưới sự giám sát của người lớn để tránh nuốt phải.</p><p>Bảo quản</p><p>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</p>",
@@ -335,7 +365,7 @@
     {
       "id": 28,
       "name": "Bàn chải đánh răng cho răng nhạy cảm Pharmacity Sensitive",
-      "price": "24000",
+      "price": 24000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P11350_4-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Cách sử dụng:</strong></p><p>Rửa sạch bàn chải trước lần đầu tiên sử dụng và sau mỗi lần dùng. Làm ướt phần lông bàn chải, lấy một lượng kem đánh răng vừa đủ và lần lượt chải sạch từng vùng răng, sau đó súc miệng sạch.</p><p>Đánh răng cả bề trong lẫn bề ngoài của hàm. Cầm bàn chải theo góc 45 độ và đánh theo biên độ bằng khoảng cách của nửa chiều ngang một chiếc răng và đánh dọc theo đường viền cơ lợi.</p><p>Ở những bề mặt tiếp xúc khi nhai, cầm bàn chải ngang và đánh qua lại.</p><p>Ở mặt trong của các răng phía trước, nghiêng bàn chải hơi đứng và dùng đầu bàn chải đánh nhẹ lên xuống.</p><p> <strong>Bảo quản:</strong></p><p>Vệ sinh bàn chải thật sạch sau khi dùng.</p><p>Giữ bàn chải nơi khô ráo.</p><p>Thay bàn chải 3 tháng/lần hoặc khi bàn chải bị tòe lông.</p><p>Chải răng theo hướng dẫn của nha sĩ.</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Mỹ</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em></p>",
       "infomation": "<p> <strong>Cách sử dụng:</strong></p><p>Rửa sạch bàn chải trước lần đầu tiên sử dụng và sau mỗi lần dùng. Làm ướt phần lông bàn chải, lấy một lượng kem đánh răng vừa đủ và lần lượt chải sạch từng vùng răng, sau đó súc miệng sạch.</p><p>Đánh răng cả bề trong lẫn bề ngoài của hàm. Cầm bàn chải theo góc 45 độ và đánh theo biên độ bằng khoảng cách của nửa chiều ngang một chiếc răng và đánh dọc theo đường viền cơ lợi.</p><p>Ở những bề mặt tiếp xúc khi nhai, cầm bàn chải ngang và đánh qua lại.</p><p>Ở mặt trong của các răng phía trước, nghiêng bàn chải hơi đứng và dùng đầu bàn chải đánh nhẹ lên xuống.</p><p> <strong>Bảo quản:</strong></p><p>Vệ sinh bàn chải thật sạch sau khi dùng.</p><p>Giữ bàn chải nơi khô ráo.</p><p>Thay bàn chải 3 tháng/lần hoặc khi bàn chải bị tòe lông.</p><p>Chải răng theo hướng dẫn của nha sĩ.</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Mỹ</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em></p>",
@@ -345,7 +375,7 @@
     {
       "id": 29,
       "name": "Khăn giấy ướt hương nhẹ an toàn cho bé Agi (100 tờ/gói)",
-      "price": "47000",
+      "price": 47000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P08882_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Cách sử dụng:</strong></p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p> <strong>Bảo quản:</strong></p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.</p><p> <strong>Quy cách đóng gói:</strong>&nbsp;100 tờ/gói</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Hàn Quốc</p><p> <strong>Sản xuất tại:</strong>&nbsp;Việt Nam</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em></p>",
       "infomation": "<p>Cách sử dụng</p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p>Bảo quản</p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.&nbsp;</p>",
@@ -355,7 +385,7 @@
     {
       "id": 30,
       "name": "Khăn giấy ướt không hương an toàn cho bé Agi (80 tờ/gói)",
-      "price": "42000",
+      "price": 42000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P08881_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Cách sử dụng:</strong></p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lại để giữ ẩm và kháng khuẩn.</p><p> <strong>Bảo quản:</strong></p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.</p><p> <strong>Quy cách đóng gói:</strong>&nbsp;80 tờ/gói</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Hàn Quốc</p><p> <strong>Sản xuất tại:</strong>&nbsp;Việt Nam</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em></p>",
       "infomation": "<p>Cách sử dụng</p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p>Bảo quản</p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.&nbsp;</p>",
@@ -365,7 +395,7 @@
     {
       "id": 31,
       "name": "Kẹo hương dâu kem Alpenliebe (32g)",
-      "price": "5200",
+      "price": 5200,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P05359_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Thành phần:</strong>&nbsp;</p><p>Màu tự nhiên, chất làm bóng, hương tự nhiên, đường, hương dâu và một số thành phần khác.</p><p> <strong>Công dụng:</strong></p><p>Giúp bạn giảm stress, trí não hoạt động minh mẫn hơn, tăng lượng đường trong máu.</p><p> <strong>Cách sử dụng:</strong>&nbsp;Ăn ngay sau khi mở gói.</p><p> <strong>Bảo quản:</strong>&nbsp;Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</p><p> <strong>Khối lượng:</strong>&nbsp;Thỏi 32g</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Italia</p><p> <strong>Sản xuất tại:</strong>&nbsp;Việt Nam</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em>&nbsp;</p>",
       "infomation": "<p>Công dụng</p><p>Giúp bạn giảm stress, trí não hoạt động minh mẫn hơn, tăng lượng đường trong máu.</p><p>Thành phần</p><p>Màu tự nhiên, chất làm bóng, hương tự nhiên, đường, hương dâu và một số thành phần khác.</p><p>Cách sử dụng</p><p>Ăn ngay sau khi mở gói.</p><p>Bảo quản</p><p>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.&nbsp;</p>",
@@ -375,7 +405,7 @@
     {
       "id": 32,
       "name": "Kẹo vị hồng trà sữa Alpenliebe (Thỏi 32g)",
-      "price": "6500",
+      "price": 6500,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P21791_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần&nbsp;</strong></p><p>Đường, siro Glucoza, dầu dừa hydro hoá, sữa đặc có đường, bột hồng trà, muối, chất nhũ hoá, hương giống tự nhiên.</p><p> <strong>Thông tin dị ứng&nbsp;</strong></p><p>Sản phẩm có chứa sữa và Lecithin đậu nành</p><p> <strong>Cách dùng&nbsp;</strong></p><p>Dùng trực tiếp sau khi mở bao bì.</p><p> <strong>Thương hiệu:</strong>&nbsp;Alpenliebe</p><p> <strong>Nơi sản xuất:&nbsp;</strong>Việt Nam</p>",
       "infomation": "<p>Brand</p><p>Alpenliebe</p>",
@@ -385,7 +415,7 @@
     {
       "id": 33,
       "name": "Kẹo mềm hương dâu Alpenliebe (24.5g)",
-      "price": "7000",
+      "price": 7000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P05355_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Thành phần:</strong>&nbsp;</p><p>Màu tự nhiên, chất làm bóng, hương tự nhiên, đường, hương dâu và một số thành phần khác.</p><p> <strong>Công dụng:</strong></p><p>Giúp bạn giảm stress, trí não hoạt động minh mẫn hơn, tăng lượng đường trong máu.</p><p> <strong>Cách sử dụng:</strong>&nbsp;Ăn ngay sau khi mở gói.</p><p> <strong>Bảo quản:</strong>&nbsp;Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</p><p> <strong>Khối lượng:</strong>&nbsp;Thỏi 32g</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Italia</p><p> <strong>Sản xuất tại:</strong>&nbsp;Việt Nam</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em>&nbsp;</p>",
       "infomation": "<p>Công dụng</p><p>Giúp bạn giảm stress, trí não hoạt động minh mẫn hơn, tăng lượng đường trong máu.</p><p>Thành phần</p><p>Màu tự nhiên, chất làm bóng, hương tự nhiên, đường, hương dâu và một số thành phần khác.</p><p>Cách sử dụng</p><p>Ăn ngay sau khi mở gói.</p><p>Bảo quản</p><p>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.&nbsp;</p>",
@@ -395,7 +425,7 @@
     {
       "id": 34,
       "name": "Kẹo mềm hương Nho Alpenliebe 2Chew (24.5g)",
-      "price": "7000",
+      "price": 7000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P05354_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Thành phần&nbsp;</strong></p><p>Đường, siro Glucoza, dầu dừa hydro hoá, sữa đặc có đường, bột hồng trà, muối, chất nhũ hoá, hương giống tự nhiên.</p><p> <strong>Thông tin dị ứng&nbsp;</strong></p><p>Sản phẩm có chứa sữa và Lecithin đậu nành</p><p> <strong>Cách dùng&nbsp;</strong></p><p>Dùng trực tiếp sau khi mở bao bì.</p><p> <strong>Thương hiệu:</strong>&nbsp;Alpenliebe</p><p> <strong>Nơi sản xuất:&nbsp;</strong>Việt Nam</p>",
       "infomation": "<p>Brand</p><p>Alpenliebe</p>",
@@ -405,7 +435,7 @@
     {
       "id": 35,
       "name": "Áo mưa cánh dơi Pharmacity",
-      "price": "65000",
+      "price": 65000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P17440_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Cách sử dụng:</strong></p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p> <strong>Bảo quản:</strong></p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.</p><p> <strong>Quy cách đóng gói:</strong>&nbsp;100 tờ/gói</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Hàn Quốc</p><p> <strong>Sản xuất tại:</strong>&nbsp;Việt Nam</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em></p>",
       "infomation": "<p>Cách sử dụng</p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p>Bảo quản</p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.&nbsp;</p>",
@@ -415,7 +445,7 @@
     {
       "id": 36,
       "name": "Nước uống đóng chai Aquafina (1.5l)",
-      "price": "14000",
+      "price": 14000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P06481_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Cách sử dụng:</strong></p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p> <strong>Bảo quản:</strong></p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.</p><p> <strong>Quy cách đóng gói:</strong>&nbsp;100 tờ/gói</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Hàn Quốc</p><p> <strong>Sản xuất tại:</strong>&nbsp;Việt Nam</p><p> <em>*Pharmacity cam kết chỉ bán sản phẩm còn dài hạn sử dụng.</em></p>",
       "infomation": "<p>Cách sử dụng</p><p>Mở nắp hộp, gỡ tem phía trong, rút từng tờ để sử dụng. Sau khi dùng xong đóng nắp hộp lai để giữ ẩm và kháng khuẩn.</p><p>Bảo quản</p><p>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp.&nbsp;</p>",
@@ -425,7 +455,7 @@
     {
       "id": 37,
       "name": "Thực phẩm bảo vệ sức khỏe 82X The Pink Collagen (Hộp 6 chai)",
-      "price": "380000",
+      "price": 380000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P25520_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Cho 1 chai 100ml dạng lỏng: Collagen peptide 1000 mg, vitamin C (Axit Lascorbic) 300mg, Axit Hyaluronic 5mg, vitamin B6 (Pyridoxine Hydrochloride) 2mg, Natri xitrat (chất nhũ hóa có nguồn gốc từ đậu nành) 40mg, chất tạo ngọt 62mg, caramen 100mg, hương liệu 280mg, Axit citric 160mg, nước 98610mg, chiết xuất quả dứa (chứa ceramide) 20mg, chiết xuất thực vật lên men (gồm cam, hạt điều, quả kiwi, vừng, đậu tương, chuối, táo) 10mg.</p><p> <strong>Công dụng</strong></p><p>Hỗ trợ chống oxy hóa, giúp hạn chế quá trình lão hóa da, giúp tăng độ đàn hồi da, giúp da căng mịn, làm đẹp da.</p><p> <strong>Đối tượng sử dụng</strong></p><p>Người da bị khô, nhăn, có nguy cơ lão hóa da. Người có nhu cầu chăm sóc làm đẹp da.</p><p> <strong>Cách dùng và Liều dùng</strong></p><p>Uống trực tiếp 2 đến 3 lần một ngày, mỗi lần 1 chai.</p><p> <strong>Chú ý:&nbsp;</strong>Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p><p> <strong>Thận trọng</strong></p><p>- Vui lòng uống ngay sau khi mở. Vui lòng kiểm tra thành phần trước khi sử dụng và không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.</p><p>- Trong một số trường hợp hiếm hoi, tùy theo thể trạng và cơ địa của bạn mà có thể không phù hợp. Trong trường hợp đó, vui lòng hạn chế sử dụng.</p><p>- Nếu bạn đang dùng thuốc hoặc đến bệnh viện, hoặc nếu bạn đang mang thai hoặc cho con bú, hãy hỏi ý kiến bác sĩ trước khi dùng.</p><p>- Vì sản phẩm này sử dụng nguyên liệu tự nhiên nên các thành phần có nguồn gốc từ nguyên liệu có thể nổi hoặc lắng xuống, nhưng không có vấn đề gì về chất lượng.</p><p>- Tránh làm nóng, đông lạnh, và va đập mạnh vào vật chứa, vì nó có thể làm hỏng vật chứa.</p><p>- Hãy cẩn thận để không bị thương bởi vết cắt hoặc phần nhô ra của nắp.</p><p>- Để xa tầm tay trẻ em. Hãy hợp tác trong việc tái chế các chai rỗng.</p><p>- Xin lưu ý rằng thành phần bên trong có thể rò rỉ nếu bạn lắc mạnh để mở.</p><p> <strong>Bảo quản:</strong>&nbsp;Tránh ánh nắng trực tiếp, nhiệt độ cao và độ ẩm cao.</p><p> <strong>Đóng gói:</strong>&nbsp;Hộp 6 chai x 100ml</p><p> <strong>Số tiếp nhận đăng ký công bố sản phẩm:</strong>&nbsp;1646/2021/ĐKSP của Cục An Toàn Thực Phẩm – Bộ Y Tế.</p><p> <strong>Cơ sở phân phối:&nbsp;</strong>Công ty Cổ phần Lychee</p><p>Địa chỉ: Tầng 6, số 144 phố Đội Cấn, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam</p><p> <strong>Sản xuất bởi:&nbsp;</strong>Nhà máy Ikeda của công ty TNHH API</p><p>Địa chỉ: 743-1, Kouji, Ikeda-cho, Ibi-gun, Gifu, JAPAN</p>",
       "infomation": "<p>Brand</p><p>82X</p>",
@@ -435,7 +465,7 @@
     {
       "id": 38,
       "name": "Thực phẩm bảo vệ sức khoẻ bảo vệ sức khoẻ hỗ trợ tiêu hoá AB Junior Pre & Pro (Hộp 10 gói)",
-      "price": "91000",
+      "price": 91000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P23358_3-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Mỗi gói bột 2.3g chứa:</p><p>Inulin chiết xuất từ rễ rau diếp (2240mg)</p><p>Bifidobacterium lactis BB-12 (50mg)</p><p>Lactobacillus acidophilus LA-5 (31.25mg)</p><p> <strong>Công dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Bổ sung chất xơ và vi khuẩn có lợi cho hệ vi sinh đường ruột. Hỗ trợ làm giảm các triệu chứng rối loạn tiêu hóa do dùng kháng sinh dài ngày hoặc loạn khuẩn đường tiêu hóa gây ra các triệu chứng táo bón, đầy hơi, khó tiêu, phân sống</span></p><p> <strong>Đối tượng sử dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Trẻ em từ 2 tuổi có các triệu chứng rối loạn tiêu hóa, loạn khuẩn</span></p><p> <strong>Cách sử dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Hòa tan bột trong gói với nước. Uống 1 gói/ngày trước bữa ăn.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Không pha bột trong nước nóng</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Sản phẩm này không phải là thuốc và không có tác dụng thay thể thuốc chữa bệnh.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Để xa tầm tay trẻ em. Đọc kỹ hướng dẫn sử dụng trước khi dùng.</span></p><p> <strong>Bảo quản:&nbsp;</strong>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp</p><p> <strong>Đóng gói:</strong>&nbsp;10 gói x 2.3g/hộp</p><p> <strong>Xuất xứ thương hiệu:&nbsp;</strong>Malaysia</p><p> <strong>Sản xuất bởi:&nbsp;</strong>UNISON NUTRACEUTICALS SDN.BHD</p><p>No. 13, Jalan TTU 52, Taman Tasik Utama, 75450 Ayer Keroh, Melaka., Ayer Keroh, Malacca, Malaysia.</p><p> <strong>Chịu trách nhiệm đưa sản phẩm ra thị trường</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Công ty TNHH Mega Lifesciences (Việt Nam)</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>362 Cộng Hòa, Phường 13, Q.Tân Bình, HCM</span></p><p> <strong>Số giấy công bố:&nbsp;</strong>8125/2018/ĐKSP</p><p> <em>Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</em></p><p> <em>Để xa tầm tay trẻ em. Đọc kỹ hướng dẫn sử dụng trước khi dùng.</em></p>",
       "infomation": "<p>Brand</p><p>Mega Lifesciences</p>",
@@ -445,7 +475,7 @@
     {
       "id": 39,
       "name": "Thực phẩm chức năng làm đẹp da Acnacare (3 vỉ x 10 viên/hộp)",
-      "price": "130000",
+      "price": 130000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P01045_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Thành phần</strong></p><p>Phức hợp Zinc-Methionin, Vitamin C, E, Kẽm, Crom, dầu đậu nành, dầu thực vật....</p><p> <strong>Công dụng</strong></p><p>Bổ sung các chất ngăn ngừa Oxy hóa, giúp ngăn ngừa, hỗ trợ làm giảm mụn và viêm các tuyến bã nhờn trên da, làm đẹp da.</p><p> <strong>Đối tượng sử dụng</strong></p><p>Nam, nữ 12 tuổi trở lên.</p>",
       "infomation": "<p>Brand</p><p>Mega Lifesciences</p>",
@@ -455,7 +485,7 @@
     {
       "id": 40,
       "name": "Xịt mũi họng Khiết Thanh Á Âu (30ml)",
-      "price": "115000",
+      "price": 115000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P22919_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Chiết xuất Lược vàng, chiết xuất Kim ngân hoa, chiết xuất Xạ can, chiết xuất Cát cánh, Zinc sulfate heptahydrate, Mentha piperita oil, Hinokitiol, Nước tinh khiết, Dimethyl sulfoxide (DMSO), Glycerin, Propylene glycol, Polyvinyl alcohol, PEG 40 hydrogenated castor oil, Steviol glycosides, Methylparaben, Disodium Edetate, Propylparaben</span></p><p> <strong>Công dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Sử dụng làm sạch, loại bỏ bụi bẩn, loại bỏ tác nhân gây bệnh dị ứng; giúp kháng khuẩn, kháng virus, kháng viêm; làm dịu ngứa họng, rát họng, đau và sưng viêm họng.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Làm loãng dịch nhầy giúp thông thoáng mũi, họng.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Sử dụng để phòng và hỗ trợ trị sổ mũi, ngạt mũi, viêm mũi dị ứng, viêm xoang, các bệnh hô hấp cấp và mạn tính do virus, vi khuẩn, do thời tiết và cảm mạo.</span></p><p> <strong>Hướng dẫn sử dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Đối với mũi: lắc nhẹ chai xịt, đưa vòi xịt vào mũi, ấn nhanh, gọn, dung dịch dạng phun sương sẽ đi sâu vào khoang mũi.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Đối với họng: lắc nhẹ chai xịt, đưa vòi xịt vào khoang miệng, ấn nhanh, gọn, dung dịch dạng phun sương sẽ đi sâu vào họng.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Ấn xịt 1-2 lần/cho mỗi bên mũi; ấn xịt 3-4 lần cho họng. Ngày dùng 3-4 lần</span></p><p> <strong>Thận trọng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Có thể dùng cho trẻ từ 03 tuổi trở lên</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Không để trẻ em tự sử dụng sản phẩm.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Sau khi sử dụng, dùng giấy thấm sạch vòi xịt, đậy nắp kín tránh làm bẩn đầu xịt</span></p><p> <strong>Bảo quản:&nbsp;</strong>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</p><p> <strong>Hạn sử dụng:&nbsp;</strong>36 tháng kể từ ngày sản xuất</p><p> <strong>Giấy xác nhận công bố:&nbsp;</strong>210001192/PCBA-HN</p><p> <strong>Sản xuất tại:</strong>&nbsp;Công ty TNHH Tư vấn Y Dược Quốc tế</p><p> <strong>Công ty phân phối sản phẩm:</strong>&nbsp;Công ty Cổ phần Châu Hưng</p><p> <em>*Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh. Không sử dụng cho người mẫn cảm với bất kì thành phần nào của sản phẩm.</em></p>",
       "infomation": "<p>Brand</p><p>IMC</p>",
@@ -465,7 +495,7 @@
     {
       "id": 41,
       "name": "TPCN hỗ trợ tăng cường thính lực Kim Thính (3 vỉ x 10 viên/hộp)",
-      "price": "210000",
+      "price": 210000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P24942_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Chiết xuất Lược vàng, chiết xuất Kim ngân hoa, chiết xuất Xạ can, chiết xuất Cát cánh, Zinc sulfate heptahydrate, Mentha piperita oil, Hinokitiol, Nước tinh khiết, Dimethyl sulfoxide (DMSO), Glycerin, Propylene glycol, Polyvinyl alcohol, PEG 40 hydrogenated castor oil, Steviol glycosides, Methylparaben, Disodium Edetate, Propylparaben</span></p><p> <strong>Công dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Sử dụng làm sạch, loại bỏ bụi bẩn, loại bỏ tác nhân gây bệnh dị ứng; giúp kháng khuẩn, kháng virus, kháng viêm; làm dịu ngứa họng, rát họng, đau và sưng viêm họng.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Làm loãng dịch nhầy giúp thông thoáng mũi, họng.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Sử dụng để phòng và hỗ trợ trị sổ mũi, ngạt mũi, viêm mũi dị ứng, viêm xoang, các bệnh hô hấp cấp và mạn tính do virus, vi khuẩn, do thời tiết và cảm mạo.</span></p><p> <strong>Hướng dẫn sử dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Đối với mũi: lắc nhẹ chai xịt, đưa vòi xịt vào mũi, ấn nhanh, gọn, dung dịch dạng phun sương sẽ đi sâu vào khoang mũi.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Đối với họng: lắc nhẹ chai xịt, đưa vòi xịt vào khoang miệng, ấn nhanh, gọn, dung dịch dạng phun sương sẽ đi sâu vào họng.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Ấn xịt 1-2 lần/cho mỗi bên mũi; ấn xịt 3-4 lần cho họng. Ngày dùng 3-4 lần</span></p><p> <strong>Thận trọng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Có thể dùng cho trẻ từ 03 tuổi trở lên</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Không để trẻ em tự sử dụng sản phẩm.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>- Sau khi sử dụng, dùng giấy thấm sạch vòi xịt, đậy nắp kín tránh làm bẩn đầu xịt</span></p><p> <strong>Bảo quản:&nbsp;</strong>Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</p><p> <strong>Hạn sử dụng:&nbsp;</strong>36 tháng kể từ ngày sản xuất</p><p> <strong>Giấy xác nhận công bố:&nbsp;</strong>210001192/PCBA-HN</p><p> <strong>Sản xuất tại:</strong>&nbsp;Công ty TNHH Tư vấn Y Dược Quốc tế</p><p> <strong>Công ty phân phối sản phẩm:</strong>&nbsp;Công ty Cổ phần Châu Hưng</p><p> <em>*Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh. Không sử dụng cho người mẫn cảm với bất kì thành phần nào của sản phẩm.</em></p>",
       "infomation": "<p>Brand</p><p>IMC</p>",
@@ -475,7 +505,7 @@
     {
       "id": 42,
       "name": "Nước uống collagen giúp hỗ trợ trắng da cải thiện nếp nhăn Alfe Beauty Conc (Hộp 10 chai x 50 ml)",
-      "price": "594000",
+      "price": 594000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P24362_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Phức hợp Zinc-Methionin, Vitamin C, E, Kẽm, Crom, dầu đậu nành, dầu thực vật....</p><p> <strong>Công dụng</strong></p><p>Bổ sung các chất ngăn ngừa Oxy hóa, giúp ngăn ngừa, hỗ trợ làm giảm mụn và viêm các tuyến bã nhờn trên da, làm đẹp da.</p><p> <strong>Đối tượng sử dụng</strong></p><p>Nam, nữ 12 tuổi trở lên.</p>",
       "infomation": "<p>Brand</p><p>Mega Lifesciences</p>",
@@ -485,7 +515,7 @@
     {
       "id": 43,
       "name": "Thực phẩm bổ sung Canxi và Vitamin D An Huy Anfa Calcium D (Hộp 30 viên)",
-      "price": "151200",
+      "price": 151200,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P25532_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Mỗi gói bột 2.3g chứa:</p><p>Inulin chiết xuất từ rễ rau diếp (2240mg)</p><p>Bifidobacterium lactis BB-12 (50mg)</p><p>Lactobacillus acidophilus LA-5 (31.25mg)</p><p> <strong>Công dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Bổ sung chất xơ và vi khuẩn có lợi cho hệ vi sinh đường ruột. Hỗ trợ làm giảm các triệu chứng rối loạn tiêu hóa do dùng kháng sinh dài ngày hoặc loạn khuẩn đường tiêu hóa gây ra các triệu chứng táo bón, đầy hơi, khó tiêu, phân sống</span></p><p> <strong>Đối tượng sử dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Trẻ em từ 2 tuổi có các triệu chứng rối loạn tiêu hóa, loạn khuẩn</span></p><p> <strong>Cách sử dụng</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Hòa tan bột trong gói với nước. Uống 1 gói/ngày trước bữa ăn.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Không pha bột trong nước nóng</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Sản phẩm này không phải là thuốc và không có tác dụng thay thể thuốc chữa bệnh.</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Để xa tầm tay trẻ em. Đọc kỹ hướng dẫn sử dụng trước khi dùng.</span></p><p> <strong>Bảo quản:&nbsp;</strong>Nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp</p><p> <strong>Đóng gói:</strong>&nbsp;10 gói x 2.3g/hộp</p><p> <strong>Xuất xứ thương hiệu:&nbsp;</strong>Malaysia</p><p> <strong>Sản xuất bởi:&nbsp;</strong>UNISON NUTRACEUTICALS SDN.BHD</p><p>No. 13, Jalan TTU 52, Taman Tasik Utama, 75450 Ayer Keroh, Melaka., Ayer Keroh, Malacca, Malaysia.</p><p> <strong>Chịu trách nhiệm đưa sản phẩm ra thị trường</strong></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>Công ty TNHH Mega Lifesciences (Việt Nam)</span></p><p> <span style='font-family: RoundedNext; font-size: medium; background-color: rgb(255, 255, 255);'>362 Cộng Hòa, Phường 13, Q.Tân Bình, HCM</span></p><p> <strong>Số giấy công bố:&nbsp;</strong>8125/2018/ĐKSP</p><p> <em>Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</em></p><p> <em>Để xa tầm tay trẻ em. Đọc kỹ hướng dẫn sử dụng trước khi dùng.</em></p>",
       "infomation": "<p>Brand</p><p>Mega Lifesciences</p>",
@@ -495,7 +525,7 @@
     {
       "id": 44,
       "name": "Thực phẩm hỗ trợ tuần hoàn máu não An Huy Bona Extra Night (Hộp 30 viên)",
-      "price": "169000",
+      "price": 169000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P25533_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Cho 1 chai 100ml dạng lỏng: Collagen peptide 1000 mg, vitamin C (Axit Lascorbic) 300mg, Axit Hyaluronic 5mg, vitamin B6 (Pyridoxine Hydrochloride) 2mg, Natri xitrat (chất nhũ hóa có nguồn gốc từ đậu nành) 40mg, chất tạo ngọt 62mg, caramen 100mg, hương liệu 280mg, Axit citric 160mg, nước 98610mg, chiết xuất quả dứa (chứa ceramide) 20mg, chiết xuất thực vật lên men (gồm cam, hạt điều, quả kiwi, vừng, đậu tương, chuối, táo) 10mg.</p><p> <strong>Công dụng</strong></p><p>Hỗ trợ chống oxy hóa, giúp hạn chế quá trình lão hóa da, giúp tăng độ đàn hồi da, giúp da căng mịn, làm đẹp da.</p><p> <strong>Đối tượng sử dụng</strong></p><p>Người da bị khô, nhăn, có nguy cơ lão hóa da. Người có nhu cầu chăm sóc làm đẹp da.</p><p> <strong>Cách dùng và Liều dùng</strong></p><p>Uống trực tiếp 2 đến 3 lần một ngày, mỗi lần 1 chai.</p><p> <strong>Chú ý:&nbsp;</strong>Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p><p> <strong>Thận trọng</strong></p><p>- Vui lòng uống ngay sau khi mở. Vui lòng kiểm tra thành phần trước khi sử dụng và không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.</p><p>- Trong một số trường hợp hiếm hoi, tùy theo thể trạng và cơ địa của bạn mà có thể không phù hợp. Trong trường hợp đó, vui lòng hạn chế sử dụng.</p><p>- Nếu bạn đang dùng thuốc hoặc đến bệnh viện, hoặc nếu bạn đang mang thai hoặc cho con bú, hãy hỏi ý kiến bác sĩ trước khi dùng.</p><p>- Vì sản phẩm này sử dụng nguyên liệu tự nhiên nên các thành phần có nguồn gốc từ nguyên liệu có thể nổi hoặc lắng xuống, nhưng không có vấn đề gì về chất lượng.</p><p>- Tránh làm nóng, đông lạnh, và va đập mạnh vào vật chứa, vì nó có thể làm hỏng vật chứa.</p><p>- Hãy cẩn thận để không bị thương bởi vết cắt hoặc phần nhô ra của nắp.</p><p>- Để xa tầm tay trẻ em. Hãy hợp tác trong việc tái chế các chai rỗng.</p><p>- Xin lưu ý rằng thành phần bên trong có thể rò rỉ nếu bạn lắc mạnh để mở.</p><p> <strong>Bảo quản:</strong>&nbsp;Tránh ánh nắng trực tiếp, nhiệt độ cao và độ ẩm cao.</p><p> <strong>Đóng gói:</strong>&nbsp;Hộp 6 chai x 100ml</p><p> <strong>Số tiếp nhận đăng ký công bố sản phẩm:</strong>&nbsp;1646/2021/ĐKSP của Cục An Toàn Thực Phẩm – Bộ Y Tế.</p><p> <strong>Cơ sở phân phối:&nbsp;</strong>Công ty Cổ phần Lychee</p><p>Địa chỉ: Tầng 6, số 144 phố Đội Cấn, Phường Đội Cấn, Quận Ba Đình, Thành phố Hà Nội, Việt Nam</p><p> <strong>Sản xuất bởi:&nbsp;</strong>Nhà máy Ikeda của công ty TNHH API</p><p>Địa chỉ: 743-1, Kouji, Ikeda-cho, Ibi-gun, Gifu, JAPAN</p>",
       "infomation": "<p>Brand</p><p>82X</p>",
@@ -505,7 +535,7 @@
     {
       "id": 45,
       "name": "Sữa nước hương Vani Abbott PediaSure cho Trẻ 1-10 Tuổi 110ml (Lốc/4 Hộp)",
-      "price": "89000",
+      "price": 89000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P18088_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Độ tuổi sử dụng:</strong>&nbsp;Trẻ từ 1 - 10 tuổi.</p><p> <strong>Hạn sử dụng:</strong>&nbsp;12 tháng.</p><p> <strong>Thương hiệu:</strong>&nbsp;Abbott</p><p> <strong>Nơi sản xuất:</strong>&nbsp;Việt Nam</p><p> <strong>Tên Nhà sản xuất:</strong>&nbsp;Deneast</p><p> <strong>Số Giấy công bố:</strong>&nbsp;22/2019/ABB-CBSP</p><p> <strong>Công ty phân phối:</strong>&nbsp;CÔNG TY TNHH DINH DƯỠNG 3A (VIỆT NAM)</p>",
       "infomation": "<p>Brand</p><p>PediaSure</p>",
@@ -515,7 +545,7 @@
     {
       "id": 46,
       "name": "Sữa nước hương vani Abbott PediaSure cho trẻ 1-10 tuổi 180ml (Lốc/4 Hộp)",
-      "price": "129000",
+      "price": 129000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P18087_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Độ tuổi sử dụng:</strong>&nbsp;Trẻ từ 1 - 10 tuổi.</p><p> <strong>Hạn sử dụng:</strong>&nbsp;12 tháng.</p><p> <strong>Thương hiệu:</strong>&nbsp;Abbott</p><p> <strong>Nơi sản xuất:</strong>&nbsp;Việt Nam</p><p> <strong>Tên Nhà sản xuất:</strong>&nbsp;Deneast</p><p> <strong>Số Giấy công bố:</strong>&nbsp;22/2019/ABB-CBSP</p><p> <strong>Công ty phân phối:</strong>&nbsp;CÔNG TY TNHH DINH DƯỠNG 3A (VIỆT NAM)</p>",
       "infomation": "<p>Brand</p><p>PediaSure</p>",
@@ -525,7 +555,7 @@
     {
       "id": 47,
       "name": "Bổ sung vitamin, tăng sức đề kháng cho bé Traphaco Antot Thymo (2 Vỉ x 10 Ống)",
-      "price": "77000",
+      "price": 77000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P14075_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Thành phần</strong></p><p>Cho 1 ống 10ml, Thymomodulin 40mg, Đạm men bia thủy phân 200 mg, Lysin hydroclorid 100 mg, Cholin bitartrat 50 mg, Taurin 50 mg, Các thành phần nguyên liệu, phụ gia khác (Nước tinh khiết, Đường trắng, Caramel, Hương liệu thực phẩm, Chất điều chỉnh độ acid (INS 524 hoặc INS 507).</p><p> <strong>Công dụng</strong></p><p>Bổ sung Thymomodulin giúp tăng cường sức đề kháng trong các bệnh nhiễm khuẩn, đặc biệt nhiễm khuẩn đường hô hấp và bệnh cảm cúm trong mùa</p><p>Bổ sung các acid amin (đặc biệt là lysin), cholin, taurin giúp ăn ngon miệng, bồi bổ cơ thể và phục hồi sức khỏe.</p><p> <strong>Đối tượng sử dụng</strong></p><p>Người mới ốm dậy, cơ thể suy nhược, gầy yếu, trẻ em chậm phát triển. Người lớn và trẻ emsuy giảm sức đề kháng dễ bị nhiễm khuẩn đặc biệt nhiễm khuẩn đường hô hấp hoặc cảm cúm. Trẻ em trong giai đoạn tăng trưởng, phát triển và trong thời kỳ học tập thi cử</p><p> <strong>Cách sử dụng</strong></p><p>Trẻ em dưới 1 tuổi: sử dụng sản phẩm theo hướng dẫn của bác sĩ.</p><p>Trẻ em từ 1 - 6 tuổi: 1 ống/lần.</p><p>Trẻ em từ 6 - 12 tuổi: 1 ống/lần x 2 lần/ngày.</p><p>Trẻ em trên 12 tuổi và người lớn: 1 - 2 ống/lần x 2 lần/ngày. Lưu ý:</p><p>Không dùng sản phẩm khi ống không còn nguyên vẹn, bị nứt, gẫy hoặc có dấu hiệu khác thường.</p><p> <strong>Bảo quản:</strong>&nbsp;Nơi khô ráo, thoáng mát, tránh đổ vỡ.</p><p> <strong>Đóng gói:</strong>&nbsp;2 vỉ X 10 ống</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Việt Nam</p><p> <strong>Sản xuất bởi:</strong>&nbsp;Công ty cổ phần Traphaco</p><p>Địa chỉ: 75 phố Yên Ninh, phường quán thánh, quận Ba Đình, thành phố Hà Nội</p><p>Điện thoại: 2438430076</p><p> <strong>Chịu trách nhiệm đưa sản phẩm ra thị trường</strong></p><p>Công ty cổ phần Traphaco</p><p>Địa chỉ: 75 phố Yên Ninh, phường quán thánh, quận Ba Đình, thành phố Hà Nội</p><p>Điện thoại: 2438430076</p><p> <strong>Số giấy XNQC:</strong>&nbsp;1020/2020/XNQC-ATT</p>",
       "infomation": "<p>Brand</p><p>AnTot Thymo</p>",
@@ -535,7 +565,7 @@
     {
       "id": 48,
       "name": "Kem dưỡng da cho da khô và nhạy cảm Aveeno Baby Soothing Relief Moisture Cream (227g)",
-      "price": "400000",
+      "price": 400000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P23164_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Water, Glycerin, Petrolatum, Mineral Oil, Dimethicone, Cetyl Alcohol, Beeswax, Hydroxypropyl Starch Phosphate, Avena Sativa (Oat) Kernel Flour, Glyceryl Stearate SE, Carbomer, Caprylyl Glycol, Sodium Hydroxide, pHAdjuster, Butylene Glycol, Ethylhexylglycerin, Palmitic Acid, StearicAcid, Chlorphenesin, Sodium CitratepHAdjuster, Tetrasodium EDTA, Glycine Soja (Soybean) Oil, Citric Acid, Portulaca Oleracea Extract, p-Anisic Acid.</p><p> <strong>Công dụng</strong></p><p>- Làm dịu da khô ngứa trong 60s</p><p>- Công thức 3x phức hợp yến mạch giúp nuôi dưỡng da đến 72h, cho làn da luôn mêm mịn và chắc khỏe</p><p>- Tinh chất yến mạch giúp nuôi dưỡng hệ vi sinh trên da, giúp da nhạy cảm phòng ngừa các vấn đề về da, phù hợp cho làn da thiên chàm sữa.</p><p>- Tinh chất yến mạch hỗ trợ quá trình kháng viêm của da</p><p> <strong>Lưu ý:&nbsp;</strong>Sử dụng dưới sự giám sát của người lớn. Giữ ngoài tầm tay trẻ em, Tránh tiếp xúc với mắt. Nếu lỡ vào mắt, rửa sạch với nước</p><p> <strong>Xuất xứ:</strong>&nbsp;Hàn Quốc</p><p> <strong>HSD:&nbsp;</strong>3 năm từ ngày sản xuất</p><p> <strong>Dung tích:&nbsp;</strong>227g</p><p> <strong>Thương hiệu:&nbsp;</strong>Aveeno</p><p> <strong>Số giấy công bố:&nbsp;</strong>104110/19/CBMP-QLD</p>",
       "infomation": "<p>Brand</p><p>Aveeno Baby</p>",
@@ -545,7 +575,7 @@
     {
       "id": 49,
       "name": "Sữa nước hương Vani Abbott PediaSure cho Trẻ 1-10 Tuổi 110ml (Lốc/4 Hộp)",
-      "price": "89000",
+      "price": 89000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P18087_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Độ tuổi sử dụng:</strong>&nbsp;Trẻ từ 1 - 10 tuổi.</p><p> <strong>Hạn sử dụng:</strong>&nbsp;12 tháng.</p><p> <strong>Thương hiệu:</strong>&nbsp;Abbott</p><p> <strong>Nơi sản xuất:</strong>&nbsp;Việt Nam</p><p> <strong>Tên Nhà sản xuất:</strong>&nbsp;Deneast</p><p> <strong>Số Giấy công bố:</strong>&nbsp;22/2019/ABB-CBSP</p><p> <strong>Công ty phân phối:</strong>&nbsp;CÔNG TY TNHH DINH DƯỠNG 3A (VIỆT NAM)</p>",
       "infomation": "<p>Brand</p><p>PediaSure</p>",
@@ -555,7 +585,7 @@
     {
       "id": 50,
       "name": "Bổ sung vitamin, tăng sức đề kháng cho bé Traphaco Antot Thymo (2 Vỉ x 10 Ống)",
-      "price": "77000",
+      "price": 77000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P14075_1_l-thumbnail-255x255.webp",
       "describe": "<p> <strong>Thành phần</strong></p><p>Water, Glycerin, Petrolatum, Mineral Oil, Dimethicone, Cetyl Alcohol, Beeswax, Hydroxypropyl Starch Phosphate, Avena Sativa (Oat) Kernel Flour, Glyceryl Stearate SE, Carbomer, Caprylyl Glycol, Sodium Hydroxide, pHAdjuster, Butylene Glycol, Ethylhexylglycerin, Palmitic Acid, StearicAcid, Chlorphenesin, Sodium CitratepHAdjuster, Tetrasodium EDTA, Glycine Soja (Soybean) Oil, Citric Acid, Portulaca Oleracea Extract, p-Anisic Acid.</p><p> <strong>Công dụng</strong></p><p>- Làm dịu da khô ngứa trong 60s</p><p>- Công thức 3x phức hợp yến mạch giúp nuôi dưỡng da đến 72h, cho làn da luôn mêm mịn và chắc khỏe</p><p>- Tinh chất yến mạch giúp nuôi dưỡng hệ vi sinh trên da, giúp da nhạy cảm phòng ngừa các vấn đề về da, phù hợp cho làn da thiên chàm sữa.</p><p>- Tinh chất yến mạch hỗ trợ quá trình kháng viêm của da</p><p> <strong>Lưu ý:&nbsp;</strong>Sử dụng dưới sự giám sát của người lớn. Giữ ngoài tầm tay trẻ em, Tránh tiếp xúc với mắt. Nếu lỡ vào mắt, rửa sạch với nước</p><p> <strong>Xuất xứ:</strong>&nbsp;Hàn Quốc</p><p> <strong>HSD:&nbsp;</strong>3 năm từ ngày sản xuất</p><p> <strong>Dung tích:&nbsp;</strong>227g</p><p> <strong>Thương hiệu:&nbsp;</strong>Aveeno</p><p> <strong>Số giấy công bố:&nbsp;</strong>104110/19/CBMP-QLD</p>",
       "infomation": "<p>Brand</p><p>Aveeno Baby</p>",
@@ -565,7 +595,7 @@
     {
       "id": 51,
       "name": "Kem dưỡng da cho da khô và nhạy cảm Aveeno Baby Soothing Relief Moisture Cream (227g)",
-      "price": "400000",
+      "price": 400000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P23164_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Cho 1 ống 10ml, Thymomodulin 40mg, Đạm men bia thủy phân 200 mg, Lysin hydroclorid 100 mg, Cholin bitartrat 50 mg, Taurin 50 mg, Các thành phần nguyên liệu, phụ gia khác (Nước tinh khiết, Đường trắng, Caramel, Hương liệu thực phẩm, Chất điều chỉnh độ acid (INS 524 hoặc INS 507).</p><p> <strong>Công dụng</strong></p><p>Bổ sung Thymomodulin giúp tăng cường sức đề kháng trong các bệnh nhiễm khuẩn, đặc biệt nhiễm khuẩn đường hô hấp và bệnh cảm cúm trong mùa</p><p>Bổ sung các acid amin (đặc biệt là lysin), cholin, taurin giúp ăn ngon miệng, bồi bổ cơ thể và phục hồi sức khỏe.</p><p> <strong>Đối tượng sử dụng</strong></p><p>Người mới ốm dậy, cơ thể suy nhược, gầy yếu, trẻ em chậm phát triển. Người lớn và trẻ emsuy giảm sức đề kháng dễ bị nhiễm khuẩn đặc biệt nhiễm khuẩn đường hô hấp hoặc cảm cúm. Trẻ em trong giai đoạn tăng trưởng, phát triển và trong thời kỳ học tập thi cử</p><p> <strong>Cách sử dụng</strong></p><p>Trẻ em dưới 1 tuổi: sử dụng sản phẩm theo hướng dẫn của bác sĩ.</p><p>Trẻ em từ 1 - 6 tuổi: 1 ống/lần.</p><p>Trẻ em từ 6 - 12 tuổi: 1 ống/lần x 2 lần/ngày.</p><p>Trẻ em trên 12 tuổi và người lớn: 1 - 2 ống/lần x 2 lần/ngày. Lưu ý:</p><p>Không dùng sản phẩm khi ống không còn nguyên vẹn, bị nứt, gẫy hoặc có dấu hiệu khác thường.</p><p> <strong>Bảo quản:</strong>&nbsp;Nơi khô ráo, thoáng mát, tránh đổ vỡ.</p><p> <strong>Đóng gói:</strong>&nbsp;2 vỉ X 10 ống</p><p> <strong>Xuất xứ thương hiệu:</strong>&nbsp;Việt Nam</p><p> <strong>Sản xuất bởi:</strong>&nbsp;Công ty cổ phần Traphaco</p><p>Địa chỉ: 75 phố Yên Ninh, phường quán thánh, quận Ba Đình, thành phố Hà Nội</p><p>Điện thoại: 2438430076</p><p> <strong>Chịu trách nhiệm đưa sản phẩm ra thị trường</strong></p><p>Công ty cổ phần Traphaco</p><p>Địa chỉ: 75 phố Yên Ninh, phường quán thánh, quận Ba Đình, thành phố Hà Nội</p><p>Điện thoại: 2438430076</p><p> <strong>Số giấy XNQC:</strong>&nbsp;1020/2020/XNQC-ATT</p>",
       "infomation": "<p>Brand</p><p>AnTot Thymo</p>",
@@ -575,7 +605,7 @@
     {
       "id": 52,
       "name": "Thực phẩm bảo vệ sức khỏe hỗ trợ giảm triệu chứng cảm sốt cho bà bầu Bạch Địa Căn Hose Hoa Sen (10 vỉ x 10 viên)",
-      "price": "73000",
+      "price": 73000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P17026_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Water, Glycerin, Petrolatum, Mineral Oil, Dimethicone, Cetyl Alcohol, Beeswax, Hydroxypropyl Starch Phosphate, Avena Sativa (Oat) Kernel Flour, Glyceryl Stearate SE, Carbomer, Caprylyl Glycol, Sodium Hydroxide, pHAdjuster, Butylene Glycol, Ethylhexylglycerin, Palmitic Acid, StearicAcid, Chlorphenesin, Sodium CitratepHAdjuster, Tetrasodium EDTA, Glycine Soja (Soybean) Oil, Citric Acid, Portulaca Oleracea Extract, p-Anisic Acid.</p><p> <strong>Công dụng</strong></p><p>- Làm dịu da khô ngứa trong 60s</p><p>- Công thức 3x phức hợp yến mạch giúp nuôi dưỡng da đến 72h, cho làn da luôn mêm mịn và chắc khỏe</p><p>- Tinh chất yến mạch giúp nuôi dưỡng hệ vi sinh trên da, giúp da nhạy cảm phòng ngừa các vấn đề về da, phù hợp cho làn da thiên chàm sữa.</p><p>- Tinh chất yến mạch hỗ trợ quá trình kháng viêm của da</p><p> <strong>Lưu ý:&nbsp;</strong>Sử dụng dưới sự giám sát của người lớn. Giữ ngoài tầm tay trẻ em, Tránh tiếp xúc với mắt. Nếu lỡ vào mắt, rửa sạch với nước</p><p> <strong>Xuất xứ:</strong>&nbsp;Hàn Quốc</p><p> <strong>HSD:&nbsp;</strong>3 năm từ ngày sản xuất</p><p> <strong>Dung tích:&nbsp;</strong>227g</p><p> <strong>Thương hiệu:&nbsp;</strong>Aveeno</p><p> <strong>Số giấy công bố:&nbsp;</strong>104110/19/CBMP-QLD</p>",
       "infomation": "<p>Brand</p><p>Aveeno Baby</p>",
@@ -585,7 +615,7 @@
     {
       "id": 53,
       "name": "Sữa rửa mặt Acne-Aid Liquid Cleanser (Chai 100ml)",
-      "price": "175000",
+      "price": 175000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-core/__sized__/products/P22986_1-thumbnail-255x255-70.jpg",
       "describe": "<p> <strong>Thành phần</strong></p><p>Aqua, Sodium Lauroyl Sarcosinate, Myristic Acid, Disodium Laureth Sulfosuccinate, Glycerin, PEG-7 Glyceryl Cocoate, Cocamidopropyl Betaine, Sulfated Olive Oil, Glycol Distearate, Paraffinum Liquidum, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Disodium EDTA, Imidazolidinyl Urea, Parfum, Sorbitan Oleate, Sodium Hydroxide</p><p> <strong>Công dụng</strong></p><p>Sữa rửa mặt Acne-Aid Liquid Cleanser làm sạch da dịu nhẹ, giúp loại bỏ dầu cho da. Thích hợp sử dụng hàng ngày, đặc biệt cho da dầu và mụn.</p><p> <strong>Cách sử dụng:&nbsp;</strong>Lắc kỹ trước khi dùng. Mát xa một lượng sữa rửa mặt lên da ướt, rửa sạch.</p><p> <strong>Đối tượng sử dụng:&nbsp;</strong>Dành cho da dầu &amp; da mụn</p><p> <strong>Giới tính:&nbsp;</strong>Mọi giới tính</p><p> <strong>Lưu ý:&nbsp;</strong>Tránh tiếp xúc với mắt. Khả năng gây kích ứng thấp, ngưng sử dụng nếu như có xảy ra.</p><p> <strong>Đặc tính:&nbsp;</strong>Có độ pH cân bằng</p><p> <strong>Hạn sử dụng:</strong>&nbsp;03 năm</p><p> <strong>Bảo quản:&nbsp;</strong>Bảo quản dưới 30 độ C</p><p> <strong>Quy cách đóng gói:</strong>&nbsp;Chai 100ml</p><p> <strong>Thương hiệu:</strong>&nbsp;Acne-Aid</p><p> <strong>Sản xuất tại:</strong>&nbsp;Thái Lan</p><p> <strong>Công ty chịu trách nhiệm về sản phẩm:</strong>&nbsp;iNova Pharmaceuticals</p><p> <strong>Công ty phân phối:</strong>&nbsp;Công ty TNHH DKSH Việt Nam</p><p> <strong>Số Giấy công bố:</strong>&nbsp;150775/21/CBMP-QLD</p><p> <strong>Số Giấy XNQC</strong>: 199/2021/XNQC-YTHCM</p>",
       "infomation": "<p>Brand</p><p>GSK OTC</p>",
@@ -595,7 +625,7 @@
     {
       "id": 54,
       "name": "Bộ xét nghiệm nhanh Covid-19 Antigen Self-Test Abbott Panbio Test Kit",
-      "price": "1638000",
+      "price": 1638000,
       "image": "https://data-service.pharmacity.io/pmc-upload-media/production/media/promotions/B1G1176.png",
       "describe": "<p> <strong>Thành phần:</strong>&nbsp;1 hướng dẫn sử dụng, 1 khay thử, 1 ống chiết, 1 nắp đậy ống chiết màu xanh, 1 chai dung dịch đệm, 1 tăm bông lấy mẫu, 1 túi đựng, 1 giá đỡ ống</p><p> <strong>Công dụng</strong></p><p> <strong>-&nbsp;</strong>Phát hiện tình trạng đang nhiễm COVID-19 ở những người có hoặc không có triệu chứng.</p><p>- Nhận kết quả sau 15 phút.</p><p>- Bộ lấy mẫu dịch ngoáy mũi thân thiện với người dùng.</p><p>- Độ nhạy 98,1%, độ đặc hiệu 99,8%.</p><p>- Thực hiện theo các hướng dẫn từng bước được minh họa kèm theo.</p><p>- Không cần phải đến cơ sở chăm sóc sức khỏe đông đúc, nơi bạn có thể có nguy cơ bị nhiễm COVID-19.</p><p>- Biết kết quả ngay, không cần đợi kết quả từ nhà cung cấp dịch vụ chăm sóc sức khỏe của bạn hoặc gửi mẫu đến phòng thí nghiệm.</p><p> <strong>Cách sử dụng:</strong>&nbsp;Sử dụng tăm bông lấy mẫu dịch ngoáy mũi đơn giản để đưa vào mũi chỉ 2cm</p><p> <strong>Độ tuổi sử dụng:&nbsp;</strong>Dùng được cho mọi lứa tuổi. Trẻ em dưới 14 tuổi cần có sự hỗ trợ của người lớn</p><p> <strong>Bảo quản:&nbsp;</strong>Bảo quản trong khoảng 2-30°C cho đến khi sử dụng</p><p> <strong>Quy cách đóng gói:</strong>&nbsp;Hộp 20 Test</p><p> <strong>Thương hiệu:&nbsp;</strong>Abbott&nbsp;Panbio</p><p> <strong>Sản xuất tại:&nbsp;</strong>Hàn Quốc</p>",
       "infomation": "<p>Brand</p><p>Abbott</p>",
@@ -732,6 +762,114 @@
       "createdAt": 1684038354297,
       "updatedAt": 1684038354297,
       "id": 2
+    },
+    {
+      "fullName": "Quang",
+      "email": "quang@gmail.com",
+      "phoneNumber": "0987654321",
+      "cityCode": "48",
+      "districtCode": "495",
+      "wardCode": "20306",
+      "address": "123",
+      "paymentMethod": 1,
+      "userId": 2,
+      "totalPrice": 50000,
+      "status": "pending",
+      "createdAt": 1684922757765,
+      "updatedAt": 1684922757765,
+      "id": 3
+    },
+    {
+      "fullName": "quang",
+      "email": "quang10@gmail.com",
+      "phoneNumber": "0987654321",
+      "cityCode": "01",
+      "districtCode": "001",
+      "wardCode": "00007",
+      "address": "123",
+      "paymentMethod": 1,
+      "totalPrice": 378000,
+      "status": "pending",
+      "createdAt": 1684924709327,
+      "updatedAt": 1684924709328,
+      "id": 4
+    },
+    {
+      "fullName": "quang4",
+      "email": "quang4@gmail.com",
+      "phoneNumber": "0123456789",
+      "cityCode": "01",
+      "districtCode": "001",
+      "wardCode": "00007",
+      "address": "123",
+      "paymentMethod": 1,
+      "totalPrice": 936000,
+      "status": "pending",
+      "createdAt": 1684925413026,
+      "updatedAt": 1684925413026,
+      "id": 5
+    },
+    {
+      "fullName": "test",
+      "email": "test@gmail.com",
+      "phoneNumber": "123456789",
+      "cityCode": "01",
+      "districtCode": "001",
+      "wardCode": "00016",
+      "address": "test",
+      "paymentMethod": 1,
+      "totalPrice": 74000,
+      "status": "pending",
+      "createdAt": 1684934983332,
+      "updatedAt": 1684934983332,
+      "id": 6
+    },
+    {
+      "fullName": "test",
+      "email": "test@gmail.com",
+      "phoneNumber": "123456789",
+      "cityCode": "79",
+      "districtCode": "760",
+      "wardCode": "26740",
+      "address": "test",
+      "paymentMethod": 1,
+      "totalPrice": 50000,
+      "status": "pending",
+      "createdAt": 1684935458046,
+      "updatedAt": 1684935458046,
+      "id": 7
+    },
+    {
+      "fullName": "test",
+      "email": "quang4@gmail.com",
+      "phoneNumber": "0987654321",
+      "cityCode": "01",
+      "districtCode": "001",
+      "wardCode": "00007",
+      "address": "test",
+      "paymentMethod": 2,
+      "userId": 6,
+      "totalPrice": 137000,
+      "status": "pending",
+      "createdAt": 1684935566115,
+      "updatedAt": 1684935566115,
+      "id": 8
+    },
+    {
+      "fullName": "test4",
+      "email": "quang4@gmail.com",
+      "phoneNumber": "0444444444",
+      "cityCode": "01",
+      "districtCode": "001",
+      "wardCode": "00007",
+      "address": "test4",
+      "paymentMethod": 2,
+      "userId": 6,
+      "totalPrice": 93000,
+      "status": "pending",
+      "createdAt": 1684935924796,
+      "updatedAt": 1684935924796,
+      "id": 9
     }
   ],
   "orderDetails": [
@@ -774,6 +912,86 @@
       "createdAt": 1684038354458,
       "updatedAt": 1684038354458,
       "id": 4
+    },
+    {
+      "orderId": 3,
+      "productId": 1,
+      "name": "Agiparofen 525mg (Hộp 5 vỉ x 10 viên)",
+      "price": 50000,
+      "quantity": 1,
+      "createdAt": 1684922757828,
+      "updatedAt": 1684922757828,
+      "id": 5
+    },
+    {
+      "orderId": 4,
+      "productId": 6,
+      "name": "Bisbeta 120 (Hộp 2 vỉ x 21 viên)",
+      "price": 378000,
+      "quantity": 1,
+      "createdAt": 1684924709382,
+      "updatedAt": 1684924709382,
+      "id": 6
+    },
+    {
+      "orderId": 5,
+      "productId": 11,
+      "name": "Sữa dinh dưỡng hương Vani Ensure Gold Vigor (237ml)",
+      "price": 56000,
+      "quantity": 1,
+      "createdAt": 1684925413091,
+      "updatedAt": 1684925413091,
+      "id": 7
+    },
+    {
+      "orderId": 5,
+      "productId": 12,
+      "name": "Sữa bột dinh dưỡng cho người đái tháo đường hương Vani Abbott Glucerna (850g)",
+      "price": 880000,
+      "quantity": 1,
+      "createdAt": 1684925413148,
+      "updatedAt": 1684925413148,
+      "id": 8
+    },
+    {
+      "orderId": 6,
+      "productId": 4,
+      "name": "Betex (Hộp 5 vỉ x 10 viên)",
+      "price": 74000,
+      "quantity": 1,
+      "createdAt": 1684934983397,
+      "updatedAt": 1684934983397,
+      "id": 9
+    },
+    {
+      "orderId": 7,
+      "productId": 1,
+      "name": "Agiparofen 525mg (Hộp 5 vỉ x 10 viên)",
+      "price": 50000,
+      "quantity": 1,
+      "createdAt": 1684935458105,
+      "updatedAt": 1684935458105,
+      "id": 10
+    },
+    {
+      "orderId": 8,
+      "productId": 2,
+      "name": "Avarino (Hộp 5 vỉ x 10 viên)",
+      "price": 137000,
+      "quantity": 1,
+      "createdAt": 1684935566176,
+      "updatedAt": 1684935566176,
+      "id": 11
+    },
+    {
+      "orderId": 9,
+      "productId": 3,
+      "name": "Axe Brand Inhaler (1.7g)",
+      "price": 93000,
+      "quantity": 1,
+      "createdAt": 1684935924844,
+      "updatedAt": 1684935924844,
+      "id": 12
     }
   ],
   "cities": [

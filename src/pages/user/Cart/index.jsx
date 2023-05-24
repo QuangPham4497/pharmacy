@@ -5,7 +5,7 @@ import {
   FormOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons";
-import { Steps, Table, Button, Input, Space, Row, Col } from "antd";
+import { Steps, Table, Button, Input, Space, Row, Col, Card } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteAction, updateAction } from "../../../redux/actions";
 
@@ -76,41 +76,44 @@ function CartPage() {
 
   return (
     <S.CartWrapper>
-      {/* <h3>Giỏ hàng</h3> */}
-      <Steps
-        size="small"
-        current={0}
-        items={[
-          {
-            title: "Giỏ hàng",
-            icon: <ShoppingCartOutlined />,
-          },
-          {
-            title: "Thanh toán",
-            icon: <FormOutlined />,
-          },
-        ]}
-      />
-      <Table
-        columns={columns}
-        dataSource={cartList}
-        pagination={false}
-        rowKey="id"
-      />
-      <Row justify="end" style={{ margin: "20px 10px" }}>
-        <Col span={4} style={{ textAlign: "center" }}>
-          <h3>Tổng tiền</h3> {cartTotalPrice.toLocaleString()} VND
-        </Col>
-      </Row>
-      <Row justify="end">
-        <Button
-          type="primary"
-          disabled={cartList.length === 0}
-          onClick={() => navigate(ROUTES.USER.CHECKOUT_LIST)}
-        >
-          Tiếp theo
-        </Button>
-      </Row>
+      <S.CartContainer>
+        <Steps
+          size="small"
+          current={0}
+          items={[
+            {
+              title: "Giỏ hàng",
+              icon: <ShoppingCartOutlined />,
+            },
+            {
+              title: "Thanh toán",
+              icon: <FormOutlined />,
+            },
+          ]}
+        />
+        <Table
+          columns={columns}
+          dataSource={cartList}
+          pagination={false}
+          rowKey="id"
+        />
+        <Row justify="end" style={{ margin: "20px 0px 20px 10px" }}>
+          <Col span={4} style={{ textAlign: "center" }}>
+            <Card title="Tổng tiền">
+              <b>{cartTotalPrice.toLocaleString()} VND</b>
+            </Card>
+          </Col>
+        </Row>
+        <Row justify="end">
+          <Button
+            type="primary"
+            disabled={cartList.length === 0}
+            onClick={() => navigate(ROUTES.USER.CHECKOUT_LIST)}
+          >
+            Tiếp theo
+          </Button>
+        </Row>{" "}
+      </S.CartContainer>
     </S.CartWrapper>
   );
 }

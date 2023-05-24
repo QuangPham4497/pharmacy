@@ -46,7 +46,7 @@ export const ProductListContainer = styled.div`
       }
 
       & h3 {
-        margin: 10px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
         height: auto;
         width: 100%;
         display: -webkit-box;
