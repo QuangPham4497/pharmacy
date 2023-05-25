@@ -37,8 +37,12 @@
       "phoneNumber": "0123456789",
       "role": "user",
       "createdAt": 1684464330411,
-      "updatedAt": 1684464330411,
-      "id": 4
+      "updatedAt": 1685034894060,
+      "id": 4,
+      "cityName": "Thành phố Hồ Chí Minh",
+      "districtName": "Quận 10",
+      "wardName": "Phường 03",
+      "address": "444"
     },
     {
       "email": "quang3@gmail.com",

@@ -37,6 +37,9 @@ function CheckoutPage() {
 
   const { cartList } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
+  const { cityList, districtList, wardList } = useSelector(
+    (state) => state.location
+  );
 
   const cartTotalPrice = cartList.reduce((total, item) => {
     return (total += item.price * item.quantity);
@@ -63,9 +66,6 @@ function CheckoutPage() {
     },
   ];
 
-  const { cityList, districtList, wardList } = useSelector(
-    (state) => state.location
-  );
   const initialValues = {
     email: userInfo.data.email,
   };

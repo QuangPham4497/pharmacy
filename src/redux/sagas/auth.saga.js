@@ -92,6 +92,37 @@ function* getUserInfoSaga(action) {
   }
 }
 
+function* updateUserInfoSaga(action) {
+  try {
+    const { id, data } = action.payload;
+    const result = yield axios.patch(`http://localhost:4000/users/${id}`, data);
+
+    yield put({
+      type: SUCCESS(AUTH_ACTION.UPDATE_USER_INFO),
+      payload: {
+        data: result.data,
+      },
+    });
+    notification.success({
+      message: "Lưu thông tin thành công!",
+      icon: (
+        <SmileOutlined
+          style={{
+            color: "#108ee9",
+          }}
+        />
+      ),
+    });
+  } catch (e) {
+    yield put({
+      type: FAIL(AUTH_ACTION.UPDATE_USER_INFO),
+      payload: {
+        error: "Loi!",
+      },
+    });
+  }
+}
+
 /*
   Starts fetchUser on each dispatched `USER_FETCH_REQUESTED` action.
   Allows concurrent fetches of user.
@@ -100,4 +131,5 @@ export default function* authSaga() {
   yield takeEvery(REQUEST(AUTH_ACTION.LOGIN), loginSaga);
   yield takeEvery(REQUEST(AUTH_ACTION.REGISTER), registerSaga);
   yield takeEvery(REQUEST(AUTH_ACTION.GET_USER_INFO), getUserInfoSaga);
+  yield takeEvery(REQUEST(AUTH_ACTION.UPDATE_USER_INFO), updateUserInfoSaga);
 }
