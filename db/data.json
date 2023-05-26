@@ -27,8 +27,15 @@
       "phoneNumber": "0123456789",
       "role": "user",
       "createdAt": 1684247322029,
-      "updatedAt": 1684247322029,
-      "id": 3
+      "updatedAt": 1685080659924,
+      "id": 3,
+      "cityCode": "79",
+      "cityName": "Thành phố Hồ Chí Minh",
+      "districtCode": "771",
+      "districtName": "Quận 10",
+      "wardCode": "27190",
+      "wardName": "Phường 02",
+      "address": "123 abc"
     },
     {
       "email": "quang2@gmail.com",
@@ -874,6 +881,25 @@
       "createdAt": 1684935924796,
       "updatedAt": 1684935924796,
       "id": 9
+    },
+    {
+      "fullName": "quang1",
+      "email": "quang1@gmail.com",
+      "phoneNumber": "0123456789",
+      "cityCode": "79",
+      "districtCode": "771",
+      "wardCode": "27190",
+      "address": "123 abc",
+      "paymentMethod": 1,
+      "userId": 3,
+      "totalPrice": 50000,
+      "status": "pending",
+      "cityName": "Thành phố Hồ Chí Minh",
+      "districtName": "Quận 10",
+      "wardName": "Phường 02",
+      "createdAt": 1685081384103,
+      "updatedAt": 1685081384108,
+      "id": 10
     }
   ],
   "orderDetails": [
@@ -996,6 +1022,16 @@
       "createdAt": 1684935924844,
       "updatedAt": 1684935924844,
       "id": 12
+    },
+    {
+      "orderId": 10,
+      "productId": 1,
+      "name": "Agiparofen 525mg (Hộp 5 vỉ x 10 viên)",
+      "price": 50000,
+      "quantity": 1,
+      "createdAt": 1685081384248,
+      "updatedAt": 1685081384248,
+      "id": 13
     }
   ],
   "cities": [

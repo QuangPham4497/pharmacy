@@ -67,16 +67,22 @@ function CheckoutPage() {
   ];
 
   const initialValues = {
+    fullName: userInfo.data.fullName,
     email: userInfo.data.email,
+    phoneNumber: userInfo.data.phoneNumber,
+    cityCode: userInfo.data.cityCode,
+    districtCode: userInfo.data.districtCode,
+    wardCode: userInfo.data.wardCode,
+    address: userInfo.data.address,
   };
 
   const handleSubmitCheckoutForm = (values) => {
-    // const { cityCode, districtCode, wardCode } = values;
-    // const cityData = cityList.data.find((item) => item.code === cityCode);
-    // const districtData = districtList.data.find(
-    //   (item) => item.code === districtCode
-    // );
-    // const wardData = wardList.data.find((item) => item.code === wardCode);
+    const { cityCode, districtCode, wardCode } = values;
+    const cityData = cityList.data.find((item) => item.code === cityCode);
+    const districtData = districtList.data.find(
+      (item) => item.code === districtCode
+    );
+    const wardData = wardList.data.find((item) => item.code === wardCode);
 
     dispatch(
       orderProductAction({
@@ -85,9 +91,9 @@ function CheckoutPage() {
           userId: userInfo.data.id,
           totalPrice: cartTotalPrice,
           status: "pending",
-          // cityName: cityData?.name,
-          // districtName: districtData?.name,
-          // wardName: wardData?.name,
+          cityName: cityData?.name,
+          districtName: districtData?.name,
+          wardName: wardData?.name,
         },
         products: cartList,
         callback: () => navigate(ROUTES.USER.HOME),
@@ -108,6 +114,14 @@ function CheckoutPage() {
   useEffect(() => {
     if (userInfo.data.id) {
       checkoutForm.resetFields();
+      if (userInfo.data.cityCode) {
+        dispatch(getDistrictListAction({ cityCode: userInfo.data.cityCode }));
+      }
+      if (userInfo.data.districtCode) {
+        dispatch(
+          getWardListAction({ districtCode: userInfo.data.districtCode })
+        );
+      }
     }
   }, [userInfo.data.id]);
 
@@ -159,6 +173,7 @@ function CheckoutPage() {
               icon: <FormOutlined />,
             },
           ]}
+          style={{ marginBottom: 16 }}
         />
         <Table
           columns={columns}

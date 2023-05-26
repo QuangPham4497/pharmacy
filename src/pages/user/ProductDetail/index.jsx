@@ -487,12 +487,6 @@ function ProductDetailPage() {
                           form={reviewForm}
                           name="reviewForm"
                           layout="vertical"
-                          labelCol={{
-                            span: 8,
-                          }}
-                          wrapperCol={{
-                            span: 16,
-                          }}
                           initialValues={{
                             remember: true,
                           }}
@@ -522,15 +516,12 @@ function ProductDetailPage() {
                               },
                             ]}
                           >
-                            <Input.TextArea autoSize />
+                            <Input.TextArea
+                              autoSize={{ maxRows: 4, minRows: 2 }}
+                            />
                           </Form.Item>
 
-                          <Form.Item
-                            wrapperCol={{
-                              offset: 8,
-                              span: 16,
-                            }}
-                          >
+                          <Form.Item>
                             <Button type="primary" htmlType="submit">
                               Gửi
                             </Button>
