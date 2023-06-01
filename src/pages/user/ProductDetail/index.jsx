@@ -283,7 +283,11 @@ function ProductDetailPage() {
                   <Col span={14}>
                     <div>
                       <p
-                        style={{ display: "flex", justifyContent: "flex-end" }}
+                        style={{
+                          display: "flex",
+                          justifyContent: "flex-end",
+                          marginRight: 5,
+                        }}
                       >
                         <i>
                           <u>Mã số: {id}</u>
@@ -349,6 +353,7 @@ function ProductDetailPage() {
                         backgroundColor: "white",
                         padding: 10,
                         margin: 10,
+                        marginTop: 25,
                         width: "100%",
                       }}
                     >
@@ -487,12 +492,6 @@ function ProductDetailPage() {
                           form={reviewForm}
                           name="reviewForm"
                           layout="vertical"
-                          labelCol={{
-                            span: 8,
-                          }}
-                          wrapperCol={{
-                            span: 16,
-                          }}
                           initialValues={{
                             remember: true,
                           }}
@@ -522,15 +521,12 @@ function ProductDetailPage() {
                               },
                             ]}
                           >
-                            <Input.TextArea autoSize />
+                            <Input.TextArea
+                              autoSize={{ maxRows: 4, minRows: 2 }}
+                            />
                           </Form.Item>
 
-                          <Form.Item
-                            wrapperCol={{
-                              offset: 8,
-                              span: 16,
-                            }}
-                          >
+                          <Form.Item style={{ textAlign: "center" }}>
                             <Button type="primary" htmlType="submit">
                               Gửi
                             </Button>

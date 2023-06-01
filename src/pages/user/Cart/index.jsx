@@ -90,6 +90,7 @@ function CartPage() {
               icon: <FormOutlined />,
             },
           ]}
+          style={{ marginBottom: 16 }}
         />
         <Table
           columns={columns}

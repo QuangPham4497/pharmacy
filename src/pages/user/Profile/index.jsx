@@ -17,24 +17,37 @@ import {
 
 function ProfilePage() {
   const dispatch = useDispatch();
-  const [infomationForm] = Form.useForm();
+  const [informationForm] = Form.useForm();
 
   const { userInfo } = useSelector((state) => state.auth);
   const { orderList } = useSelector((state) => state.order);
   const { cityList, districtList, wardList } = useSelector(
     (state) => state.location
   );
+  // initial của thông tin cá nhân
+  const initialValues = {
+    fullName: userInfo.data.fullName,
+    email: userInfo.data.email,
+    phoneNumber: userInfo.data.phoneNumber,
+    cityCode: userInfo.data.cityCode,
+    districtCode: userInfo.data.districtCode,
+    wardCode: userInfo.data.wardCode,
+    address: userInfo.data.address,
+  };
 
   // useEffect: mounting
   useEffect(() => {
     if (userInfo.data.id) {
       dispatch(getOrderList({ userId: userInfo.data.id }));
-    }
-  }, [userInfo.data.id]);
-
-  useEffect(() => {
-    if (userInfo.data.id) {
-      infomationForm.resetFields();
+      informationForm.resetFields();
+      if (userInfo.data.cityCode) {
+        dispatch(getDistrictListAction({ cityCode: userInfo.data.cityCode }));
+      }
+      if (userInfo.data.districtCode) {
+        dispatch(
+          getWardListAction({ districtCode: userInfo.data.districtCode })
+        );
+      }
     }
   }, [userInfo.data.id]);
 
@@ -42,16 +55,6 @@ function ProfilePage() {
     dispatch(getCityListAction());
   }, []);
 
-  // initial của thông tin cá nhân
-  const initialValues = {
-    fullName: userInfo.data.fullName,
-    email: userInfo.data.email,
-    phoneNumber: userInfo.data.phoneNumber,
-    cityName: userInfo.data.cityName,
-    districtName: userInfo.data.districtName,
-    wardName: userInfo.data.wardName,
-    address: userInfo.data.address,
-  };
   const handleSaveInfoForm = (values) => {
     const { cityCode, districtCode, wardCode } = values;
     const cityData = cityList.data.find((item) => item.code === cityCode);
@@ -63,10 +66,15 @@ function ProfilePage() {
     dispatch(
       updateUserInfoAction({
         data: {
+          cityCode: cityCode,
           cityName: cityData.name,
+          districtCode: districtCode,
           districtName: districtData.name,
+          wardCode: wardCode,
           wardName: wardData.name,
           address: values.address,
+          fullName: values.fullName,
+          phoneNumber: values.phoneNumber,
         },
         id: userInfo.data.id,
       })
@@ -127,6 +135,13 @@ function ProfilePage() {
       key: "createdAt",
       render: (createdAt) => moment(createdAt).format("DD/MM/YYYY HH:mm"),
     },
+    {
+      title: "Địa chỉ giao hàng",
+      dataIndex: "address",
+      key: "address",
+      render: (_, item) =>
+        `${item.address}, ${item.wardName}, ${item.districtName}, ${item.cityName}`,
+    },
   ];
 
   // expandable table detail
@@ -168,8 +183,8 @@ function ProfilePage() {
       <S.ProfileContainer>
         {/* form Thông tin cá nhân */}
         <Form
-          name="infomationForm"
-          form={infomationForm}
+          name="informationForm"
+          form={informationForm}
           layout="vertical"
           initialValues={initialValues}
           onFinish={(values) => handleSaveInfoForm(values)}
@@ -187,7 +202,7 @@ function ProfilePage() {
                     },
                   ]}
                 >
-                  <Input readOnly />
+                  <Input />
                 </Form.Item>
               </Col>
               <Col span={24}>
@@ -205,7 +220,7 @@ function ProfilePage() {
                   name="phoneNumber"
                   rules={[{ required: true, message: "" }]}
                 >
-                  <Input readOnly />
+                  <Input />
                 </Form.Item>
               </Col>
               <Col span={8}>
@@ -214,7 +229,7 @@ function ProfilePage() {
                     defaultValue={userInfo.data.cityName}
                     onChange={(value) => {
                       dispatch(getDistrictListAction({ cityCode: value }));
-                      infomationForm.setFieldsValue({
+                      informationForm.setFieldsValue({
                         districtCode: undefined,
                         wardCode: undefined,
                       });
@@ -230,11 +245,11 @@ function ProfilePage() {
                     defaultValue={userInfo.data.districtName}
                     onChange={(value) => {
                       dispatch(getWardListAction({ districtCode: value }));
-                      infomationForm.setFieldsValue({
+                      informationForm.setFieldsValue({
                         wardCode: undefined,
                       });
                     }}
-                    disabled={!infomationForm.getFieldValue("cityCode")}
+                    disabled={!informationForm.getFieldValue("cityCode")}
                   >
                     {renderDistrictOptions}
                   </Select>
@@ -244,7 +259,7 @@ function ProfilePage() {
                 <Form.Item label="Phường, xã" name="wardCode">
                   <Select
                     defaultValue={userInfo.data.wardName}
-                    disabled={!infomationForm.getFieldValue("districtCode")}
+                    disabled={!informationForm.getFieldValue("districtCode")}
                   >
                     {renderWardListOptions}
                   </Select>

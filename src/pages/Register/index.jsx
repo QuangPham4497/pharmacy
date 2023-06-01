@@ -37,6 +37,13 @@ function RegisterPage() {
           password: values.password,
           phoneNumber: values.phoneNumber,
           role: "user",
+          cityCode: "",
+          cityName: "",
+          districtCode: "",
+          districtName: "",
+          wardCode: "",
+          wardName: "",
+          address: "",
         },
 
         callback: () => navigate(ROUTES.LOGIN),
@@ -114,6 +121,7 @@ function RegisterPage() {
                 required: true,
                 whitespace: true,
                 message: "Please input your numberphone",
+                pattern: /(84|0[3|5|7|8|9])+([0-9]{8})\b/g,
               },
             ]}
           >

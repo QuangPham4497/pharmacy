@@ -71,12 +71,12 @@ function CheckoutPage() {
   };
 
   const handleSubmitCheckoutForm = (values) => {
-    // const { cityCode, districtCode, wardCode } = values;
-    // const cityData = cityList.data.find((item) => item.code === cityCode);
-    // const districtData = districtList.data.find(
-    //   (item) => item.code === districtCode
-    // );
-    // const wardData = wardList.data.find((item) => item.code === wardCode);
+    const { cityCode, districtCode, wardCode } = values;
+    const cityData = cityList.data.find((item) => item.code === cityCode);
+    const districtData = districtList.data.find(
+      (item) => item.code === districtCode
+    );
+    const wardData = wardList.data.find((item) => item.code === wardCode);
 
     dispatch(
       orderProductAction({
@@ -85,9 +85,9 @@ function CheckoutPage() {
           userId: userInfo.data.id,
           totalPrice: cartTotalPrice,
           status: "pending",
-          // cityName: cityData?.name,
-          // districtName: districtData?.name,
-          // wardName: wardData?.name,
+          cityName: cityData?.name,
+          districtName: districtData?.name,
+          wardName: wardData?.name,
         },
         products: cartList,
         callback: () => navigate(ROUTES.USER.HOME),
@@ -104,7 +104,7 @@ function CheckoutPage() {
       ),
     });
   };
-
+  // mounting
   useEffect(() => {
     if (userInfo.data.id) {
       checkoutForm.resetFields();
@@ -159,6 +159,7 @@ function CheckoutPage() {
               icon: <FormOutlined />,
             },
           ]}
+          style={{ marginBottom: 16 }}
         />
         <Table
           columns={columns}
@@ -210,14 +211,6 @@ function CheckoutPage() {
                     <Input />
                   </Form.Item>
                 )}
-
-                {/* <Form.Item
-                  label="Email"
-                  name="email"
-                  rules={[{ required: true, message: "" }]}
-                >
-                  <Input />
-                </Form.Item> */}
               </Col>
               <Col span={24}>
                 <Form.Item

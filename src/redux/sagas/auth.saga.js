@@ -29,6 +29,7 @@ function* loginSaga(action) {
       ),
     });
   } catch (e) {
+    // console.log("🚀 ~ file: auth.saga.js:32 ~ function*loginSaga ~ e:", e);
     yield put({
       type: FAIL(AUTH_ACTION.LOGIN),
       payload: {
@@ -62,6 +63,7 @@ function* registerSaga(action) {
       ),
     });
   } catch (e) {
+    // console.log("🚀 ~ file: auth.saga.js:65 ~ function*registerSaga ~ e:", e);
     yield put({
       type: FAIL(AUTH_ACTION.REGISTER),
       payload: {
